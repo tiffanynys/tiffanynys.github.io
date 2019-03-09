@@ -102,57 +102,56 @@
 
     <style>
             .work1 {
-            grid-area: W1;
             background-color: rgb(213, 248, 245);
             min-height: 200px;
-            min-width: 200px;
+            max-width: 400px;
+            min-width: 100px;
         }
         
         .work2 {
-            grid-area: W2;
             background-color: rgb(229, 247, 243);
             min-height: 200px;
-            min-width: 200px;
+            max-width: 400px;
+            min-width: 100px;
         }
         
         .work3 {
-            grid-area: W3;
             background-color: rgb(178, 209, 235);
             min-height: 200px;
-            min-width: 200px;
+            max-width: 400px;
+            min-width: 100px;
         }
         
         .work4 {
-            grid-area: W4;
             background-color: rgb(226, 226, 247);
             min-height: 200px;
-            min-width: 200px;
+            max-width: 400px;
+            min-width: 100px;
         }
         
-        .container {
+        #container {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
         
         @media (min-width: 400px) {
-            .container {
+            #container {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
     </style>
 
     <div>
         <br>
         <br>
-        <h2 class="animated flash infinite"> WORK EXPERIENCE</h2>
+        <h2 class="Bounce Out Up"> WORK EXPERIENCE</h2>
         <br>
     </div>
 
     <div id="container">
         <div class="work1">HKPC Intern
             <figure>
-                <img src="hw2/hkpc.jpg " alt=" " style="width:25%;height:25%" ; "" "></figure>
-            
+                <img src="hw2/hkpc.jpg " alt=" " style="width:25%;height:25%" ; "" "></figure>   
         </div>
         <div class="work2 ">BOCL Summer Intern
             <figure>
@@ -290,11 +289,13 @@
             .container {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
             }
             @media (max-width: 700px) {
                 .container {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
                 }
             }
     </style>
@@ -329,7 +330,7 @@
         <style>
             .container {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
             }
             
             .photo {
@@ -343,7 +344,7 @@
             @media (min-width: 400px) {
                 .container {
                     display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr;
                 }
             }
         </style>
@@ -365,4 +366,4 @@
 
 </body>
 
-</html>
+</html>—
