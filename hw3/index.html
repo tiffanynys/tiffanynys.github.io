@@ -1,0 +1,114 @@
+<html>
+
+<head>
+
+</head>
+
+
+<body>
+
+    <style>
+            body {
+            font-size: 16px;
+            background-color: rgb(255, 252, 220);
+        }
+    }
+    @media (min-width: 100px) {
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    </style>
+
+
+    <style>
+        .C1 {
+            min-height: 50px;
+            max-width: 400px;
+            min-width: 10px;
+        }
+    </style>
+
+
+    <h1 style="font-size:5vw"> BMI Calculator</h1>
+    <p>Body Mass Index is a simple calculation using a person's height and weight. The formula is BMI = kg/m^2 where kg is a person's weight in kilograms and m2 is their height in metres squared. A BMI of 25.0 or more is overweight, while the healthy range
+        is 18.5 to 24.9. BMI applies to most adults 18-65 years. </p>
+
+    <div class="C1">
+
+        <input id="num1" type="number"> kg ÷
+        <input id="num2" type="number"> m^2
+        <button id="cal">Calculate</button>
+        <br> BMI=
+        <input id="result" type="number">
+
+
+    </div>
+
+    <script>
+        // a = document.getElementById("num1").value
+        // b = document.getElementById("num2").value
+        // result = (+a)/(+b)
+
+        function calculate() {
+            // step 1: get input
+            a = +document.getElementById("num1").value
+            b = +document.getElementById("num2").value
+                // step 2: do the calculation
+            result = (a) / (b)
+                // step 3: write oute the result
+            document.getElementById("result").value = result
+        }
+
+        document.getElementById("cal").addEventListener('click', calculate)
+        document.getElementById("num1").addEventListener('change', calculate)
+        document.getElementById("num1").addEventListener('keyup', calculate)
+        document.getElementById("num2").addEventListener('change', calculate)
+        document.getElementById("num2").addEventListener('keyup', calculate)
+
+        // result = Math.pow(a, b)
+        // console.log('result:')
+        // console.log(result)
+    </script>
+
+    <h2>
+        <br> --------------Please ignore the classwork below-------------</h2>
+
+    <h1>Calculator</h1>
+    <p>This is a paragraph</p>
+    Num1:
+    <input id="num1" type="number" value="300"> Num2:
+    <input id="num2" type="number" value="50">
+    <br>
+    <button id="cal">Calculate</button>
+    <br> Result:
+    <input id="result" type="number">
+
+    <script>
+        // a = document.getElementById("num1").value
+        // b = document.getElementById("num2").value
+        // result = (+a) / (+b)
+
+        function calculate() {
+            // step 1: get input
+            a = +document.getElementById("num1").value
+            b = +document.getElementById("num2").value
+                // step 2: do the calculation
+            result = (a) / (b)
+                // step 3: write oute the result
+            document.getElementById("result").value = result
+        }
+
+        document.getElementById("cal").addEventListener('click', calculate)
+        document.getElementById("num1").addEventListener('change', calculate)
+        document.getElementById("num1").addEventListener('keyup', calculate)
+        document.getElementById("num2").addEventListener('change', calculate)
+        document.getElementById("num2").addEventListener('keyup', calculate)
+
+        // result = Math.pow(a, b)
+        // console.log('result:')
+        // console.log(result)
+    </script>
+
+</body>
+
+</html>
