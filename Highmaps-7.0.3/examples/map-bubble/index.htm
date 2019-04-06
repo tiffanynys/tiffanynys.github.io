@@ -1,73 +1,79 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Highmaps Example</title>
 
-		<style type="text/css">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highmaps Example</title>
 
-		</style>
-	</head>
-	<body>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="../../code/highmaps.js"></script>
-<script src="../../code/modules/data.js"></script>
-<script src="../../code/modules/exporting.js"></script>
-<script src="../../code/modules/offline-exporting.js"></script>
-<script src="../../code/mapdata/custom/world.js"></script>
+    <style type="text/css">
 
-<div id="container" style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"></div>
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../../code/highmaps.js"></script>
+    <script src="../../code/modules/data.js"></script>
+    <script src="../../code/modules/exporting.js"></script>
+    <script src="../../code/modules/offline-exporting.js"></script>
+    <script src="http://code.highcharts.com/mapdata/custom/world.js"></script>
+    <script src="../../code/mapdata/custom/world.js"></script>
+
+    <div id="container" style="height: 500px; min-width: 310px; max-width: 800px; margin: 0 auto"></div>
 
 
 
-		<script type="text/javascript">
+    <script type="text/javascript">
+        // Prepare random data
+        var data = [
+            ['DE.SH', 300],
+            ['DE.BE', 600],
+            ['DE.MV', 1000],
 
-$.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/world-population.json', function (data) {
+        ];
 
-    Highcharts.mapChart('container', {
-        chart: {
-            borderWidth: 1,
-            map: 'custom/world'
-        },
+        $.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/germany.geo.json', function(geojson) {
 
-        title: {
-            text: 'World population 2013 by country'
-        },
+            // Initiate the chart
+            Highcharts.mapChart('container', {
+                chart: {
+                    map: geojson
+                },
 
-        subtitle: {
-            text: 'Demo of Highcharts map with bubbles'
-        },
+                title: {
+                    text: 'GeoJSON in Highmaps'
+                },
 
-        legend: {
-            enabled: false
-        },
+                mapNavigation: {
+                    enabled: true,
+                    buttonOptions: {
+                        verticalAlign: 'bottom'
+                    }
+                },
 
-        mapNavigation: {
-            enabled: true,
-            buttonOptions: {
-                verticalAlign: 'bottom'
-            }
-        },
+                colorAxis: {
+                    tickPixelInterval: 100
+                },
 
-        series: [{
-            name: 'Countries',
-            color: '#E0E0E0',
-            enableMouseTracking: false
-        }, {
-            type: 'mapbubble',
-            name: 'Population 2016',
-            joinBy: ['iso-a3', 'code3'],
-            data: data,
-            minSize: 4,
-            maxSize: '12%',
-            tooltip: {
-                pointFormat: '{point.properties.hc-a2}: {point.z} thousands'
-            }
-        }]
-    });
-});
+                series: [{
+                    data: data,
+                    keys: ['name', 'value'],
+                    joinBy: 'name',
+                    name: 'Random data',
+                    states: {
+                        hover: {
+                            color: '#a4edba'
+                        }
+                    },
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.properties.postal}'
+                    }
+                }]
+            });
+        });
+    </script>
+</body>
 
-		</script>
-	</body>
 </html>
