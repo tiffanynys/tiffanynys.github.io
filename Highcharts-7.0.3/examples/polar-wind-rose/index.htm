@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highcharts Example</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <script src="../../code/highcharts.js"></script>
+    <script src="../../code/highcharts-more.js"></script>
+    <script src="../../code/modules/data.js"></script>
+    <script src="../../code/modules/exporting.js"></script>
+    <script src="../../code/modules/export-data.js"></script>
+
+    <div id="container" style="min-width: 420px; max-width: 600px; height: 400px; margin: 0 auto"></div>
+
+    <div style="display:none">
+        <!-- Source: http://or.water.usgs.gov/cgi-bin/grapher/graph_windrose.pl -->
+        <table id="freq" border="0" cellspacing="0" cellpadding="0">
+            <tr nowrap bgcolor="#CCCCFF">
+                <th colspan="9" class="hdr">Table of Frequencies (percent)</th>
+            </tr>
+            <tr nowrap bgcolor="#CCCCFF">
+                <th class="freq">Direction</th>
+                <th class="freq">Extraverted...</th>
+                <th class="freq">Introverted</th>
+                <th class="freq">Observant...</th>
+                <th class="freq">Intutive</th>
+                <th class="freq">Thinking</th>
+                <th class="freq">Feeling</th>
+                <th class="freq">Judging</th>
+                <th class="freq">Prospecting</th>
+                <th class="freq">Assertive</th>
+                <th class="freq">Turbulent</th>
+
+            </tr>
+            <tr nowrap>
+                <td class="dir">Mind</td>
+                <td class="data">100</td>
+                <td class="data">0</td>
+                <td class="data">0</td>
+                <td class="data">0</td>
+                <td class="data">0</td>
+                <td class="data">0</td>
+                <td class="data">0</td>
+                <td class="data">0</td>
+
+            </tr>
+            <tr nowrap bgcolor="#DDDDDD">
+                <td class="dir">Energy</td>
+                <td class="data">0</td>
+                <td class="data">0</td>
+                <td class="data">70.00</td>
+                <td class="data">30.00</td>
+                <td class="data">0.00</td>
+                <td class="data">0.00</td>
+                <td class="data">0.00</td>
+                <td class="data">0</td>
+            </tr>
+            <tr nowrap>
+                <td class="dir">Nature</td>
+                <td class="data">0</td>
+                <td class="data">0</td>
+                <td class="data">0</td>
+                <td class="data">0</td>
+                <td class="data">20</td>
+                <td class="data">80</td>
+                <td class="data">0.00</td>
+                <td class="data">0</td>
+            </tr>
+            <tr nowrap bgcolor="#DDDDDD">
+                <td class="dir">Tactics</td>
+                <td class="data">0.59</td>
+                <td class="data">1.22</td>
+                <td class="data">0.07</td>
+                <td class="data">0.00</td>
+                <td class="data">0.00</td>
+                <td class="data">0.00</td>
+                <td class="data">0.00</td>
+                <td class="data">1.88</td>
+            </tr>
+            <tr nowrap bgcolor="#DDDDDD">
+                <td class="dir">Identity</td>
+                <td class="data">0.59</td>
+                <td class="data">1.22</td>
+                <td class="data">0.07</td>
+                <td class="data">0.00</td>
+                <td class="data">0.00</td>
+                <td class="data">0.00</td>
+                <td class="data">0.00</td>
+                <td class="data">1.88</td>
+
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        // Parse the data from an inline table using the Highcharts Data plugin
+        Highcharts.chart('container', {
+            data: {
+                table: 'freq',
+                startRow: 1,
+                endRow: 17,
+                endColumn: 7
+            },
+
+            chart: {
+                polar: true,
+                type: 'column'
+            },
+
+            title: {
+                text: '16 Personalities ....'
+            },
+
+            subtitle: {
+                text: 'Source: https://www.16personalities.com/articles/our-theory'
+            },
+
+            pane: {
+                size: '85%'
+            },
+
+            legend: {
+                align: 'right',
+                verticalAlign: 'top',
+                y: 100,
+                layout: 'vertical'
+            },
+
+            xAxis: {
+                tickmarkPlacement: 'on'
+            },
+
+            yAxis: {
+                min: 0,
+                endOnTick: false,
+                showLastLabel: true,
+                title: {
+                    text: 'Frequency (%)'
+                },
+                labels: {
+                    formatter: function() {
+                        return this.value + '%';
+                    }
+                },
+                reversedStacks: false
+            },
+
+            tooltip: {
+                valueSuffix: '%'
+            },
+
+            plotOptions: {
+                series: {
+                    stacking: 'normal',
+                    shadow: false,
+                    groupPadding: 0,
+                    pointPlacement: 'on'
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
