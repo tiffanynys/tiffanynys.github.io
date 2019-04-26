@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highcharts Example</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+
+    <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+    <script src="../Highcharts-7.0.3/code/highcharts-3d.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/export-data.js"></script>
+
+    <div id="container" style="height: 400px"></div>
+
+
+    <script type="text/javascript">
+        Highcharts.setOptions({
+            colors: ['#023E5C', '#769A99', '#25594B', '#455C02', '#3C3C3B', '#778CA6', '#3A93B3', '#5C4802']
+        });
+
+        Highcharts.chart('container', {
+            chart: {
+                type: 'pie',
+                options3d: {
+                    enabled: true,
+                    alpha: 45
+                }
+            },
+            title: {
+                text: 'Sexual Assault Awareness'
+            },
+            subtitle: {
+                text: 'Numbers of Correct Answers in 8 Questions about Sexual Violation'
+            },
+            plotOptions: {
+                pie: {
+                    innerSize: 100,
+                    depth: 45
+                }
+            },
+            series: [{
+                name: 'Head counts',
+                data: [
+                    ['8 (100%)', 13],
+                    ['7 (87.5%)', 34],
+                    ['6 (75%)', 30],
+                    ['5 (62.5%)', 11],
+                    ['4 (50%)', 7],
+                    ['3 (37.5%)', 3],
+                    ['2 (25%)', 0],
+                    ['1 (12.5%)', 1],
+                    ['0 (0%)', 0]
+                ]
+            }]
+        });
+    </script>
+</body>
+
+</html>

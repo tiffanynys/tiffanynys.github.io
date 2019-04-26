@@ -1,0 +1,394 @@
+<html>
+
+
+
+
+<body>
+
+    <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+    <script src="../Highcharts-7.0.3/code/highcharts-3d.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/export-data.js"></script>
+
+
+    <div id="content">
+
+        <div id="RL Trend" style="min-width: 310px; height:400px;margin:0px">
+
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Highcharts Example</title>
+
+                <style type="text/css">
+
+                </style>
+            </head>
+
+            <body>
+                <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                <script type="text/javascript">
+                    Highcharts.setOptions({
+                        colors: ['#BE1622', '#769A99', '#3C3C3B']
+                    });
+
+                    Highcharts.chart('container1', {
+                        chart: {
+                            type: 'line'
+                        },
+                        title: {
+                            text: 'Number of cases handled by RainLily per three-year period from 2000 to 2017'
+                        },
+                        subtitle: {
+                            text: 'Source: RainLily'
+                        },
+                        xAxis: {
+                            categories: ['2000-2002', '2003-2005', '2006-2008', '2009-2011', '2012-2014', '2015-2017']
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Number of Cases'
+                            }
+                        },
+                        plotOptions: {
+                            line: {
+                                dataLabels: {
+                                    enabled: true
+                                },
+                                enableMouseTracking: false
+                            }
+                        },
+                        series: [{
+                            name: 'Rape',
+                            data: [128, 433, 403, 412, 428, 446]
+                        }, {
+                            name: 'Indecent Assault',
+                            data: [34, 166, 194, 175, 196, 275]
+                        }, {
+                            name: 'Sexual Harassment',
+                            data: [15, 24, 24, 12, 35, 92]
+                        }]
+                    });
+                </script>
+            </body>
+        </div>
+
+        <div id="perpetrator" style="min-width: 310px; height:400px;margin:0px">
+
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Highcharts Example</title>
+
+                <style type="text/css">
+                    #container2 {
+                        max-width: 660px;
+                        margin: auto;
+                        height: 400px;
+                        margin: 0 auto;
+                    }
+                </style>
+            </head>
+
+            <body>
+                <div id="container2"></div>
+                <script type="text/javascript">
+                    var colors = Highcharts.setOptions({
+                            colors: ['#BE1622', '#769A99', '#3C3C3B']
+                        }),
+                        categories = [
+                            'Acquaintance',
+                            'Stranger',
+                            'Others'
+                        ],
+                        data = [{
+                            y: 78.6,
+                            color: '#769A99',
+                            drilldown: {
+                                name: 'Acquaintance',
+                                categories: [
+                                    'Peer or Friend',
+                                    'Intimate Partner',
+                                    'Work Relationship',
+                                    'Parent, Sibling or Relative',
+                                    'Online Acquaintance',
+                                    'Caregiver (non-related)',
+                                    'Neighbour'
+                                ],
+                                data: [
+                                    36.3,
+                                    21.1,
+                                    9.4,
+                                    8.5,
+                                    1.2,
+                                    0.3,
+                                    1.7
+                                ]
+                            }
+                        }, {
+                            y: 17.5,
+                            color: '#BE1622',
+                            drilldown: {
+                                name: 'Stranger',
+                                categories: [
+                                    'Stranger'
+                                ],
+                                data: [
+                                    17.5
+                                ]
+                            }
+                        }, {
+                            y: 3.9,
+                            color: '#3C3C3B',
+                            drilldown: {
+                                name: 'Others',
+                                categories: [
+                                    'Others'
+                                ],
+                                data: [
+                                    3.9
+                                ]
+                            }
+                        }],
+                        browserData = [],
+                        versionsData = [],
+                        i,
+                        j,
+                        dataLen = data.length,
+                        drillDataLen,
+                        brightness;
+
+
+                    // Build the data arrays
+                    for (i = 0; i < dataLen; i += 1) {
+
+                        // add browser data
+                        browserData.push({
+                            name: categories[i],
+                            y: data[i].y,
+                            color: data[i].color
+                        });
+
+                        // add version data
+                        drillDataLen = data[i].drilldown.data.length;
+                        for (j = 0; j < drillDataLen; j += 1) {
+                            brightness = 0.2 - (j / drillDataLen) / 5;
+                            versionsData.push({
+                                name: data[i].drilldown.categories[j],
+                                y: data[i].drilldown.data[j],
+                                color: Highcharts.Color(data[i].color).brighten(brightness).get()
+                            });
+                        }
+                    }
+
+                    // Create the chart
+                    Highcharts.chart('container2', {
+                        chart: {
+                            type: 'pie'
+                        },
+                        title: {
+                            text: "Victim-perpetrator Relationship"
+                        },
+                        subtitle: {
+                            text: 'Source: RainLily</a>'
+                        },
+                        plotOptions: {
+                            pie: {
+                                shadow: false,
+                                center: ['50%', '50%']
+                            }
+                        },
+                        tooltip: {
+                            valueSuffix: '%'
+                        },
+                        series: [{
+                            name: 'Browsers',
+                            data: browserData,
+                            size: '60%',
+                            dataLabels: {
+                                formatter: function() {
+                                    return this.y > 5 ? this.point.name : null;
+                                },
+                                color: '#ffffff',
+                                distance: -30
+                            }
+                        }, {
+                            name: 'Versions',
+                            data: versionsData,
+                            size: '80%',
+                            innerSize: '60%',
+                            dataLabels: {
+                                formatter: function() {
+                                    // display only if larger than 1
+                                    return this.y > 1 ? '<b>' + this.point.name + ':</b> ' +
+                                        this.y + '%' : null;
+                                }
+                            },
+                            id: 'versions'
+                        }],
+                        responsive: {
+                            rules: [{
+                                condition: {
+                                    maxWidth: 400
+                                },
+                                chartOptions: {
+                                    series: [{
+                                        id: 'versions',
+                                        dataLabels: {
+                                            enabled: false
+                                        }
+                                    }]
+                                }
+                            }]
+                        }
+                    });
+                </script>
+            </body>
+        </div>
+
+        <div id="delay reporting" style="min-width: 310px; height:400px;margin:0px">
+
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Highcharts Example</title>
+
+                <style type="text/css">
+
+                </style>
+            </head>
+
+            <body>
+
+                <div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+                <script type="text/javascript">
+                    Highcharts.setOptions({
+                        colors: ['#BE1622', '#769A99']
+                    });
+
+                    Highcharts.chart('container3', {
+                        chart: {
+                            type: 'bar'
+                        },
+                        title: {
+                            text: 'Delay Reporting time: Below 16 VS Above 16'
+                        },
+                        xAxis: {
+                            categories: [
+                                'Age Group'
+                            ],
+                            crosshair: true
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: 'Number of Days (Mean)'
+                            }
+                        },
+                        tooltip: {
+                            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                                '<td style="padding:0"><b>{point.y} </b></td></tr>',
+                            footerFormat: '</table>',
+                            shared: true,
+                            useHTML: true
+                        },
+                        plotOptions: {
+                            column: {
+                                pointPadding: 0.2,
+                                borderWidth: 0
+                            }
+                        },
+                        series: [{
+                            name: 'Below 16',
+                            data: [4814]
+
+                        }, {
+                            name: 'Above 16',
+                            data: [444]
+
+                        }]
+                    });
+                </script>
+            </body>
+        </div>
+
+        <div id="correct counts" style="min-width: 310px; height:400px;margin:0px">
+
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Highcharts Example</title>
+
+                <style type="text/css">
+
+                </style>
+            </head>
+
+            <body>
+
+                <div id="container4" style="height: 400px"></div>
+
+
+                <script type="text/javascript">
+                    Highcharts.setOptions({
+                        colors: ['#023E5C', '#769A99', '#25594B', '#455C02', '#3C3C3B', '#778CA6', '#3A93B3', '#5C4802']
+                    });
+
+                    Highcharts.chart('container4', {
+                        chart: {
+                            type: 'pie',
+                            options3d: {
+                                enabled: true,
+                                alpha: 45
+                            }
+                        },
+                        title: {
+                            text: 'Sexual Assault Awareness'
+                        },
+                        subtitle: {
+                            text: 'Numbers of Correct Answers in 8 Questions about Sexual Violation'
+                        },
+                        plotOptions: {
+                            pie: {
+                                innerSize: 100,
+                                depth: 45
+                            }
+                        },
+                        series: [{
+                            name: 'Head counts',
+                            data: [
+                                ['8 (100%)', 13],
+                                ['7 (87.5%)', 34],
+                                ['6 (75%)', 30],
+                                ['5 (62.5%)', 11],
+                                ['4 (50%)', 7],
+                                ['3 (37.5%)', 3],
+                                ['2 (25%)', 0],
+                                ['1 (12.5%)', 1],
+                                ['0 (0%)', 0]
+                            ]
+                        }]
+                    });
+                </script>
+            </body>
+
+
+
+        </div>
+
+        <div id="depends5" style="min-width: 310px; height:400px;margin:0px">
+        </div>
+
+        <div id="depends" style="min-width: 310px; height:400px;margin:0px">
+
+        </div>
+
+
+
+</body>
+
+</html>

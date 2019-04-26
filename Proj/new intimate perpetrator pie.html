@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highcharts Example</title>
+
+    <style type="text/css">
+        #container {
+            max-width: 660px;
+            margin: auto;
+            height: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/export-data.js"></script>
+
+    <div id="container"></div>
+
+
+
+    <script type="text/javascript">
+        var colors = Highcharts.setOptions({
+                colors: ['#BE1622', '#769A99', '#3C3C3B']
+            }),
+            categories = [
+                'Acquaintance',
+                'Stranger',
+                'Others'
+            ],
+            data = [{
+                y: 78.6,
+                color: '#769A99',
+                drilldown: {
+                    name: 'Acquaintance',
+                    categories: [
+                        'Peer or Friend',
+                        'Intimate Partner',
+                        'Work Relationship',
+                        'Parent, Sibling or Relative',
+                        'Online Acquaintance',
+                        'Caregiver (non-related)',
+                        'Neighbour'
+                    ],
+                    data: [
+                        36.3,
+                        21.1,
+                        9.4,
+                        8.5,
+                        1.2,
+                        0.3,
+                        1.7
+                    ]
+                }
+            }, {
+                y: 17.5,
+                color: '#BE1622',
+                drilldown: {
+                    name: 'Stranger',
+                    categories: [
+                        'Stranger'
+                    ],
+                    data: [
+                        17.5
+                    ]
+                }
+            }, {
+                y: 3.9,
+                color: '#3C3C3B',
+                drilldown: {
+                    name: 'Others',
+                    categories: [
+                        'Others'
+                    ],
+                    data: [
+                        3.9
+                    ]
+                }
+            }],
+            browserData = [],
+            versionsData = [],
+            i,
+            j,
+            dataLen = data.length,
+            drillDataLen,
+            brightness;
+
+
+        // Build the data arrays
+        for (i = 0; i < dataLen; i += 1) {
+
+            // add browser data
+            browserData.push({
+                name: categories[i],
+                y: data[i].y,
+                color: data[i].color
+            });
+
+            // add version data
+            drillDataLen = data[i].drilldown.data.length;
+            for (j = 0; j < drillDataLen; j += 1) {
+                brightness = 0.2 - (j / drillDataLen) / 5;
+                versionsData.push({
+                    name: data[i].drilldown.categories[j],
+                    y: data[i].drilldown.data[j],
+                    color: Highcharts.Color(data[i].color).brighten(brightness).get()
+                });
+            }
+        }
+
+        // Create the chart
+        Highcharts.chart('container', {
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: "Victim-perpetrator Relationship"
+            },
+            subtitle: {
+                text: 'Source: RainLily</a>'
+            },
+            plotOptions: {
+                pie: {
+                    shadow: false,
+                    center: ['50%', '50%']
+                }
+            },
+            tooltip: {
+                valueSuffix: '%'
+            },
+            series: [{
+                name: 'Browsers',
+                data: browserData,
+                size: '60%',
+                dataLabels: {
+                    formatter: function() {
+                        return this.y > 5 ? this.point.name : null;
+                    },
+                    color: '#ffffff',
+                    distance: -30
+                }
+            }, {
+                name: 'Versions',
+                data: versionsData,
+                size: '80%',
+                innerSize: '60%',
+                dataLabels: {
+                    formatter: function() {
+                        // display only if larger than 1
+                        return this.y > 1 ? '<b>' + this.point.name + ':</b> ' +
+                            this.y + '%' : null;
+                    }
+                },
+                id: 'versions'
+            }],
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 400
+                    },
+                    chartOptions: {
+                        series: [{
+                            id: 'versions',
+                            dataLabels: {
+                                enabled: false
+                            }
+                        }]
+                    }
+                }]
+            }
+        });
+    </script>
+</body>
+
+</html>

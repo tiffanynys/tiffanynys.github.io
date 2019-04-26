@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highcharts Example</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+    <script src=".../Highcharts-7.0.3/code/modules/export-data.js"></script>
+
+    <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+
+
+    <script type="text/javascript">
+        // Build the chart
+        Highcharts.chart('container', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: "Perpetrator's relationship with the victim"
+            },
+            subtitle: {
+                text: "Source: RainLily"
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: 'Caregiver (non-related)',
+                    y: 0.3
+                }, {
+                    name: 'Neighbour',
+                    y: 1.7
+                }, {
+                    name: 'Others',
+                    y: 3.9
+                }, {
+                    name: 'Stranger',
+                    y: 61.41,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Peer or Friend',
+                    y: 36.3
+                }, {
+                    name: 'Intimate Partner',
+                    y: 21.1
+                }, {
+                    name: 'Work Relationship',
+                    y: 9.4
+                }, {
+                    name: 'Parent, Sibling or Relative',
+                    y: 8.5
+                }, {
+                    name: 'Online Acquaintance',
+                    y: 1.2
+                }]
+            }]
+        });
+    </script>
+</body>
+
+</html>

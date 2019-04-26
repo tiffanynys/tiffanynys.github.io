@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <script src="../../code/highcharts.js"></script>
-    <script src="../../code/modules/exporting.js"></script>
-    <script src="../../code/modules/export-data.js"></script>
+    <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/export-data.js"></script>
 
     <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
@@ -26,7 +26,7 @@
                 type: 'line'
             },
             title: {
-                text: 'Female Victims in Newly Reported Sexual Violence Cases'
+                text: 'Sexual Violence'
             },
             subtitle: {
                 text: 'Source: Social Welfare Department'
@@ -48,11 +48,14 @@
                 }
             },
             series: [{
-                name: 'Reported Spouse / Cohabitant Battering',
-                data: [5169, 5575, 4012, 2643, 2616, 2300, 3144, 3262, 2824, 2783, 2632, 2387]
+                name: 'Rape/Unlawful Sexual Intercourse',
+                data: [90, 80, 100, 72, 78, 82, 97, 109, 107, 101, 122, 130]
             }, {
-                name: 'Sexual Violence',
-                data: [788, 682, 390, 399, 333, 237, 669, 1075, 848, 837, 932, 986]
+                name: 'Indecent assault',
+                data: [684, 589, 277, 243, 242, 142, 557, 966, 734, 729, 802, 844]
+            }, {
+                name: 'Total',
+                data: [797, 693, 396, 343, 341, 238, 681, 1105, 871, 861, 967, 1020]
             }]
         });
     </script>
