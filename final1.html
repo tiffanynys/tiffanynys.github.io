@@ -381,9 +381,228 @@
         </div>
 
         <div id="depends5" style="min-width: 310px; height:400px;margin:0px">
+            figure><img src="Proj/pie.png" alt=""></figure>
         </div>
 
-        <div id="depends" style="min-width: 310px; height:400px;margin:0px">
+        <div id="ideal source" style="min-width: 310px; height:400px;margin:0px">
+
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Highcharts Example</title>
+
+                <style type="text/css">
+
+                </style>
+            </head>
+
+            <body>
+
+                <div id="container6" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+                <script type="text/javascript">
+                    Highcharts.setOptions({
+                        colors: ['#BE1622', '#769A99']
+                    });
+                    Highcharts.chart('container6', {
+                        chart: {
+                            type: 'bar'
+                        },
+                        title: {
+                            text: 'Sources of Sex Education: Reality VS Ideal'
+                        },
+                        xAxis: {
+                            categories: [
+                                'Books',
+                                'Family',
+                                'Friends',
+                                'Internet',
+                                'NGO',
+                                'School',
+                                'Government',
+                                'Others'
+                            ],
+                            crosshair: true
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: 'Number of Counts'
+                            }
+                        },
+                        tooltip: {
+                            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                                '<td style="padding:0"><b>{point.y} </b></td></tr>',
+                            footerFormat: '</table>',
+                            shared: true,
+                            useHTML: true
+                        },
+                        plotOptions: {
+                            column: {
+                                pointPadding: 0.2,
+                                borderWidth: 0
+                            }
+                        },
+                        series: [{
+                            name: 'Reality',
+                            data: [11, 50, 15, 32, 1, 89, 0, 1]
+
+                        }, {
+                            name: 'Ideal',
+                            data: [15, 88, 4, 15, 1, 98, 3, 1]
+
+                        }]
+                    });
+                </script>
+            </body>
+
+
+        </div>
+
+        <div id="ideal age" style="min-width: 310px; height:400px;margin:0px">
+
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Highcharts Example</title>
+
+                <style type="text/css">
+
+                </style>
+            </head>
+
+            <body>
+                <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+                <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+                <script src="../Highcharts-7.0.3/code/modules/export-data.js"></script>
+
+                <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+
+
+                <script type="text/javascript">
+                    Highcharts.setOptions({
+                        colors: ['#BE1622', '#769A99', '#D4DCE1', '#3C3C3B']
+                    });
+
+                    Highcharts.chart('container', {
+                        chart: {
+                            type: 'bar'
+                        },
+                        title: {
+                            text: 'Perception on Age of Receiving Sex Education'
+                        },
+                        xAxis: {
+                            categories: ['Reality', 'Ideal', '13-15', '16-18'],
+                            title: {
+                                text: "Comparison"
+                            }
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: 'Age of Receiving Sex Education'
+                            }
+                        },
+                        legend: {
+                            reversed: true
+                        },
+                        plotOptions: {
+                            series: {
+                                stacking: 'normal'
+                            }
+                        },
+                        series: [{
+                            name: 'Under 6',
+                            data: [21, 68]
+                        }, {
+                            name: '6-12',
+                            data: [41, 27]
+                        }, {
+                            name: '13-15',
+                            data: [31, 2]
+                        }, {
+                            name: '16-18',
+                            data: [6, 2]
+                        }]
+                    });
+                </script>
+            </body>
+
+        </div>
+
+        <div id="age source" style="min-width: 310px; height:400px;margin:0px">
+
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Highcharts Example</title>
+
+                <style type="text/css">
+
+                </style>
+            </head>
+
+            <body>
+                <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+                <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+                <script src="../Highcharts-7.0.3/code/modules/export-data.js"></script>
+
+                <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+
+
+                <script type="text/javascript">
+                    Highcharts.setOptions({
+                        colors: ['#BE1622', '#769A99', '#D4DCE1', '#3C3C3B']
+                    });
+                    Highcharts.chart('container', {
+                        chart: {
+                            type: 'bar'
+                        },
+                        title: {
+                            text: 'Age & Source of Sex Edu'
+                        },
+                        xAxis: {
+                            categories: ['Under 6', '6-12', '13-15', '16-18'],
+                            title: {
+                                text: "Age of Receiving Sex Education"
+                            }
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: 'Source of Sex Education'
+                            }
+                        },
+                        legend: {
+                            reversed: true
+                        },
+                        plotOptions: {
+                            series: {
+                                stacking: 'normal'
+                            }
+                        },
+                        series: [{
+                            name: 'Family',
+                            data: [1, 1, 1, 1]
+                        }, {
+                            name: 'Family & School',
+                            data: [21, 22, 2, 2]
+                        }, {
+                            name: 'School',
+                            data: [0, 17, 24, 2]
+                        }, {
+                            name: 'Others',
+                            data: [0, 1, 4, 1]
+                        }]
+                    });
+                </script>
+            </body>
+
 
         </div>
 
