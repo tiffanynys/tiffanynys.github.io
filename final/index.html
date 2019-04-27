@@ -7,345 +7,729 @@ Licence: Free to use under our free template licence terms
 Licence URI: http://www.os-templates.com/template-terms
 -->
 <html lang="">
+
 <head>
-<title>Carinary</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <title>Sexual Abuse</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
+
 <body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row1">
-  <header id="header" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div id="logo" class="fl_left">
-      <h1><a href="index.html">Carinary</a></h1>
+    <!-- Highcharts -->
+    <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+    <script src="../Highcharts-7.0.3/code/highcharts-3d.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/export-data.js"></script>
+
+
+    <!-- Header -->
+    <div class="wrapper row1">
+        <header id="header" class="hoc clear">
+            <div id="logo" class="fl_left">
+                <h1>JOUR 2106 Data Visualisation-- Team 2</a>
+                </h1>
+            </div>
+            <div id="quickinfo" class="fl_right">
+                <ul class="nospace inline">
+                    <li>
+                        Erica Chin, Tiffany Ng, Hanyue Sun and Midori Ge <br> 27th April, 2019</li>
+                </ul>
+            </div>
+        </header>
     </div>
-    <div id="quickinfo" class="fl_right">
-      <ul class="nospace inline">
-        <li><strong>Maecenas:</strong><br>
-          +00 (123) 456 7890</li>
-        <li><strong>Condimentum:</strong><br>
-          +00 (123) 456 7890</li>
-      </ul>
+
+    <!-- Cover -->
+    <div class="wrapper bgded" style="background-image:url('images/coverphoto-01.png');">
+        <div id="pageintro" class="hoc clear">
+            <div class="flexslider basicslider">
+                <ul class="slides">
+                    <li>
+                        <article>
+                            <h3 class="heading">The Muffled Voice</h3>
+                            <p>The plight of sexual violence victims in Hong Kong</p>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <!-- ################################################################################################ -->
-  </header>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row2">
-  <nav id="mainav" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <ul class="clear">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a class="drop" href="#">Pages</a>
-        <ul>
-          <li><a href="pages/gallery.html">Gallery</a></li>
-          <li><a href="pages/full-width.html">Full Width</a></li>
-          <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-          <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-          <li><a href="pages/basic-grid.html">Basic Grid</a></li>
-        </ul>
-      </li>
-      <li><a class="drop" href="#">Dropdown</a>
-        <ul>
-          <li><a href="#">Level 2</a></li>
-          <li><a class="drop" href="#">Level 2 + Drop</a>
-            <ul>
-              <li><a href="#">Level 3</a></li>
-              <li><a href="#">Level 3</a></li>
-              <li><a href="#">Level 3</a></li>
+
+    <!-- 黑 Background -->
+    <div class="wrapper row3">
+        <div>
+            <h6 class="heading">Sexual Violence in Hong Kong</h6>
+            <p>#MeToo movement is an attempt to demonstrate the widespread prevalence of sexual assault and harassment. The waves of this movement started with a hashtag on social media in 2017. Ever since, more and more women came forward on social media
+                with their shared experiences of sexual harassment.
+            </p>
+            <p>The city of Hong Kong has paid more attention to this movement, as hurdle champion Vera Lui Lai Yiu and local artist Louisa Mak Ming Sze has supported #MeToo by sharing their stories to the public.
+            </p>
+            <p>It has been almost two year since the #MeToo movement. As the heat of these stories quiets down, are Hongkongers safer from sexual violence?
+            </p>
+        </div>
+    </div>
+
+    <!-- 白 Sex Violence in HK -->
+    <div class="wrapper row3">
+        <section class="hoc container clear">
+            <div class="sectiontitle">
+                <h6 class="heading">Sexual Violence</h6>
+                <p>What is sexual violence?</p>
+            </div>
+            <div class="group">
+                <div class="one_half first">
+
+                    <iframe src="https://www.youtube.com/embed/LWctQH4C0P8" frameborder='0' allowfullscreen></iframe>
+                </div>
+                <div class="one_half">
+                    <p>Sexual violence refers to the intended offence in action, language or attitude with sexual implications, which make a person feel uncomfortable. </p>
+                    <p>By this definition, sexual violence includes not only to rape and indecent assault, but also sexual abuse without body contact. Examples are sexual harassment, dirty jokes, and sex-oriented comment.
+                    </p>
+                    <p>Sexual violence has nothing to do with the relationship or gender of involved parties. Both male and female can be victims of sexual violence. </p>
+                    </p>
+                    <br>
+                </div>
+                <!-- hk situation -->
+                <div class="sectiontitle">
+                    <h6 class="heading">Situations in Hong Kong</h6>
+                    <p>According to RainLily, Hong Kong’s first sexual violence crisis centre launched in 2000, the situation of female victims is worrying. </p>
+                    <br>
+                </div>
+                <div>
+                    <!-- increasing -->
+                    <h6 class="heading">Increasing number of reported cases of sexual abuse</h6>
+                    <p>The number of cases of ‘Rape’, ‘Indecent assault’ and ‘Sexual harassment’ has gone up. Over the past 18 years, the number of ‘Rape’ cases increased from 128 to 446, which is three times the original. </p>
+
+                    <div id="RL Trend" style="min-width: 310px; height:400px;margin:0px">
+
+                        <head>
+                            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <title>Highcharts Example</title>
+
+                            <style type="text/css">
+
+                            </style>
+                        </head>
+
+                        <body>
+                            <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                            <script type="text/javascript">
+                                Highcharts.setOptions({
+                                    colors: ['#BE1622', '#769A99', '#3C3C3B']
+                                });
+
+                                Highcharts.chart('container1', {
+                                    chart: {
+                                        type: 'line'
+                                    },
+                                    title: {
+                                        text: 'Number of cases handled by RainLily per three-year period from 2000 to 2017'
+                                    },
+                                    subtitle: {
+                                        text: 'Source: RainLily'
+                                    },
+                                    xAxis: {
+                                        categories: ['2000-2002', '2003-2005', '2006-2008', '2009-2011', '2012-2014', '2015-2017']
+                                    },
+                                    yAxis: {
+                                        title: {
+                                            text: 'Number of Cases'
+                                        }
+                                    },
+                                    plotOptions: {
+                                        line: {
+                                            dataLabels: {
+                                                enabled: true
+                                            },
+                                            enableMouseTracking: false
+                                        }
+                                    },
+                                    series: [{
+                                        name: 'Rape',
+                                        data: [128, 433, 403, 412, 428, 446]
+                                    }, {
+                                        name: 'Indecent Assault',
+                                        data: [34, 166, 194, 175, 196, 275]
+                                    }, {
+                                        name: 'Sexual Harassment',
+                                        data: [15, 24, 24, 12, 35, 92]
+                                    }]
+                                });
+                            </script>
+                        </body>
+                    </div>
+                    <br><br><br>
+                    <!-- district -->
+                    <h6 class="heading">Reported cases by district</h6>
+                    <p>According to the Social Welfare Department, ‘Yau Tsim Mong’ and ‘Central and Western’ are the two districts with the most reported sexual violence cases last year.</p>
+                    <p></p>
+                    <div></div>
+                    <br><br><br>
+                    <!-- acquaintances -->
+                    <h6 class="heading">Most of the perpetrators are acquaintances of the victims</h6>
+                    <p>RainLily also found that most perpetrators and victims are acquaintances. Around 80% of victims know the perpetrator prior to the incident, whereas strangers only take up 20% of the perpetrators.
+                    </p>
+                    <p></p>
+                    <div id="perpetrator" style="min-width: 310px; height:400px;margin:0px">
+
+                        <head>
+                            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <title>Highcharts Example</title>
+
+                            <style type="text/css">
+                                #container2 {
+                                    max-width: 660px;
+                                    margin: auto;
+                                    height: 400px;
+                                    margin: 0 auto;
+                                }
+                            </style>
+                        </head>
+
+                        <body>
+                            <div id="container2"></div>
+                            <script type="text/javascript">
+                                var colors = Highcharts.setOptions({
+                                        colors: ['#BE1622', '#769A99', '#3C3C3B']
+                                    }),
+                                    categories = [
+                                        'Acquaintance',
+                                        'Stranger',
+                                        'Others'
+                                    ],
+                                    data = [{
+                                        y: 78.6,
+                                        color: '#769A99',
+                                        drilldown: {
+                                            name: 'Acquaintance',
+                                            categories: [
+                                                'Peer or Friend',
+                                                'Intimate Partner',
+                                                'Work Relationship',
+                                                'Parent, Sibling or Relative',
+                                                'Online Acquaintance',
+                                                'Caregiver (non-related)',
+                                                'Neighbour'
+                                            ],
+                                            data: [
+                                                36.3,
+                                                21.1,
+                                                9.4,
+                                                8.5,
+                                                1.2,
+                                                0.3,
+                                                1.7
+                                            ]
+                                        }
+                                    }, {
+                                        y: 17.5,
+                                        color: '#BE1622',
+                                        drilldown: {
+                                            name: 'Stranger',
+                                            categories: [
+                                                'Stranger'
+                                            ],
+                                            data: [
+                                                17.5
+                                            ]
+                                        }
+                                    }, {
+                                        y: 3.9,
+                                        color: '#3C3C3B',
+                                        drilldown: {
+                                            name: 'Others',
+                                            categories: [
+                                                'Others'
+                                            ],
+                                            data: [
+                                                3.9
+                                            ]
+                                        }
+                                    }],
+                                    browserData = [],
+                                    versionsData = [],
+                                    i,
+                                    j,
+                                    dataLen = data.length,
+                                    drillDataLen,
+                                    brightness;
+
+
+                                // Build the data arrays
+                                for (i = 0; i < dataLen; i += 1) {
+
+                                    // add browser data
+                                    browserData.push({
+                                        name: categories[i],
+                                        y: data[i].y,
+                                        color: data[i].color
+                                    });
+
+                                    // add version data
+                                    drillDataLen = data[i].drilldown.data.length;
+                                    for (j = 0; j < drillDataLen; j += 1) {
+                                        brightness = 0.2 - (j / drillDataLen) / 5;
+                                        versionsData.push({
+                                            name: data[i].drilldown.categories[j],
+                                            y: data[i].drilldown.data[j],
+                                            color: Highcharts.Color(data[i].color).brighten(brightness).get()
+                                        });
+                                    }
+                                }
+
+                                // Create the chart
+                                Highcharts.chart('container2', {
+                                    chart: {
+                                        type: 'pie'
+                                    },
+                                    title: {
+                                        text: "Victim-perpetrator Relationship"
+                                    },
+                                    subtitle: {
+                                        text: 'Source: RainLily</a>'
+                                    },
+                                    plotOptions: {
+                                        pie: {
+                                            shadow: false,
+                                            center: ['50%', '50%']
+                                        }
+                                    },
+                                    tooltip: {
+                                        valueSuffix: '%'
+                                    },
+                                    series: [{
+                                        name: 'Browsers',
+                                        data: browserData,
+                                        size: '60%',
+                                        dataLabels: {
+                                            formatter: function() {
+                                                return this.y > 5 ? this.point.name : null;
+                                            },
+                                            color: '#ffffff',
+                                            distance: -30
+                                        }
+                                    }, {
+                                        name: 'Versions',
+                                        data: versionsData,
+                                        size: '80%',
+                                        innerSize: '60%',
+                                        dataLabels: {
+                                            formatter: function() {
+                                                // display only if larger than 1
+                                                return this.y > 1 ? '<b>' + this.point.name + ':</b> ' +
+                                                    this.y + '%' : null;
+                                            }
+                                        },
+                                        id: 'versions'
+                                    }],
+                                    responsive: {
+                                        rules: [{
+                                            condition: {
+                                                maxWidth: 400
+                                            },
+                                            chartOptions: {
+                                                series: [{
+                                                    id: 'versions',
+                                                    dataLabels: {
+                                                        enabled: false
+                                                    }
+                                                }]
+                                            }
+                                        }]
+                                    }
+                                });
+                            </script>
+                        </body>
+                    </div>
+                    <br><br><br>
+                    <!-- delay report -->
+                    <h6 class="heading">delay reporting</h6>
+                    <p>---</p>
+                    <p></p>
+                    <div id="delay reporting" style="min-width: 310px; height:400px;margin:0px">
+
+                        <head>
+                            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <title>Highcharts Example</title>
+
+                            <style type="text/css">
+
+                            </style>
+                        </head>
+
+                        <body>
+
+                            <div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+                            <script type="text/javascript">
+                                Highcharts.setOptions({
+                                    colors: ['#BE1622', '#769A99']
+                                });
+
+                                Highcharts.chart('container3', {
+                                    chart: {
+                                        type: 'bar'
+                                    },
+                                    title: {
+                                        text: 'Delay Reporting time: Below 16 VS Above 16'
+                                    },
+                                    xAxis: {
+                                        categories: [
+                                            'Age Group'
+                                        ],
+                                        crosshair: true
+                                    },
+                                    yAxis: {
+                                        min: 0,
+                                        title: {
+                                            text: 'Number of Days (Mean)'
+                                        }
+                                    },
+                                    tooltip: {
+                                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                                            '<td style="padding:0"><b>{point.y} </b></td></tr>',
+                                        footerFormat: '</table>',
+                                        shared: true,
+                                        useHTML: true
+                                    },
+                                    plotOptions: {
+                                        column: {
+                                            pointPadding: 0.2,
+                                            borderWidth: 0
+                                        }
+                                    },
+                                    series: [{
+                                        name: 'Below 16',
+                                        data: [4814]
+
+                                    }, {
+                                        name: 'Above 16',
+                                        data: [444]
+
+                                    }]
+                                });
+                            </script>
+                        </body>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--黑 Recognition -->
+    <div class="wrapper row3 ">
+        <section class="hoc container clear ">
+            <!-- ################################################################################################ -->
+            <div class="sectiontitle ">
+                <h6 class="heading">Recognition of sexual violence</h6>
+                <p>99 females aged 15-29 had took part in a quiz with 8 questions on identifying the acts of sexual violation.
+                </p> <br><br>
+            </div>
+            <h6 class="heading ">Which of the following act would you consider as an act of sexual violation?</h6>
+            <div class="group team ">
+                <figure class="one_quarter first ">
+                    <img src="images/sexualviolenceact-01.png" style="max-width:100%" class="image">
+                    <div class="overlay">
+                        <img src="images/sexualviolenceact_pie-01.png" style="max-width:100%" class="image">
+                    </div>
+                </figure>
+
+                <figure class="one_quarter ">
+                    <img src="images/sexualviolenceact-02.png" style="max-width:100%" class="image">
+                    <div class="overlay">
+                        <img src="images/sexualviolenceact_pie-02.png" style="max-width:100%" class="image">
+                    </div>
+                </figure>
+
+                <figure class="one_quarter ">
+                    <img src="images/sexualviolenceact-03.png" style="max-width:100%" class="image">
+                    <div class="overlay">
+                        <img src="images/sexualviolenceact_pie-03.png" style="max-width:100%" class="image">
+                    </div>
+                </figure>
+
+                <figure class="one_quarter ">
+                    <img src="images/sexualviolenceact-04.png" style="max-width:100%" class="image">
+                    <div class="overlay">
+                        <img src="images/sexualviolenceact_pie-04.png" style="max-width:100%" class="image">
+                    </div>
+                </figure>
+            </div>
+            <br><br>
+
+            <div class="group team ">
+                <figure class="one_quarter first ">
+                    <img src="images/sexualviolenceact-05.png" style="max-width:100%" class="image">
+                    <div class="overlay">
+                        <img src="images/sexualviolenceact_pie-05.png" style="max-width:100%" class="image">
+                    </div>
+
+                </figure>
+                <figure class="one_quarter ">
+                    <img src="images/sexualviolenceact-06.png" style="max-width:100%" class="image">
+                    <div class="overlay">
+                        <img src="images/sexualviolenceact_pie-06.png" style="max-width:100%" class="image">
+                    </div>
+
+                </figure>
+                <figure class="one_quarter ">
+                    <img src="images/sexualviolenceact-07.png" style="max-width:100%" class="image">
+                    <div class="overlay">
+                        <img src="images/sexualviolenceact_pie-07.png" style="max-width:100%" class="image">
+                    </div>
+                </figure>
+
+                <figure class="one_quarter ">
+                    <img src="images/sexualviolenceact-08.png" style="max-width:100%" class="image">
+                    <div class="overlay">
+                        <img src="images/sexualviolenceact_pie-08.png" style="max-width:100%" class="image">
+                    </div>
+                </figure>
+            </div>
+            <div class="clear "></div>
+            <br>
+
+            <div id="correct counts" style="min-width: 310px; height:400px;margin:0px">
+
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Highcharts Example</title>
+
+                    <style type="text/css">
+
+                    </style>
+                </head>
+
+                <body>
+
+                    <div id="container4" style="height: 400px"></div>
+
+
+                    <script type="text/javascript">
+                        Highcharts.setOptions({
+                            colors: ['#023E5C', '#769A99', '#25594B', '#455C02', '#3C3C3B', '#778CA6', '#3A93B3', '#5C4802']
+                        });
+
+                        Highcharts.chart('container4', {
+                            chart: {
+                                type: 'pie',
+                                options3d: {
+                                    enabled: true,
+                                    alpha: 45
+                                }
+                            },
+                            title: {
+                                text: 'Sexual Assault Awareness'
+                            },
+                            subtitle: {
+                                text: 'Numbers of Correct Answers in 8 Questions about Sexual Violation'
+                            },
+                            plotOptions: {
+                                pie: {
+                                    innerSize: 100,
+                                    depth: 45
+                                }
+                            },
+                            series: [{
+                                name: 'Head counts',
+                                data: [
+                                    ['8 (100%)', 13],
+                                    ['7 (87.5%)', 34],
+                                    ['6 (75%)', 30],
+                                    ['5 (62.5%)', 11],
+                                    ['4 (50%)', 7],
+                                    ['3 (37.5%)', 3],
+                                    ['2 (25%)', 0],
+                                    ['1 (12.5%)', 1],
+                                    ['0 (0%)', 0]
+                                ]
+                            }]
+                        });
+                    </script>
+                </body>
+
+
+
+            </div>
+        </section>
+    </div>
+
+    <!-- 白 Female voices and silence? -->
+    <!-- 黑 Sex education in Hong Kong -->
+    <!-- 白 Seeking help -->
+
+    <!-- 黑 Related articles -->
+    <div class="wrapper bgded overlay">
+        <main class="hoc container clear">
+            <!-- main body -->
+            <!-- ################################################################################################ -->
+            <ul class="nospace group services">
+                <li class="one_third first">
+                    <article>
+                        <h6 class="heading">The women helping Hong Kong victims of sexual abuse fight back</h6>
+                        <p>Donec eleifend dignissim erat integer vel dui ac nisi scelerisque malesuada proin ac nulla in rhoncus [&hellip;]</p>
+                        <footer>
+                            <a class="btn" href="https://www.scmp.com/news/hong-kong/community/article/2120683/women-helping-hong-kong-victims-sexual-abuse-fight-back" ">Read More &raquo;</a></footer>
+                    </article>
+                </li>
+                <li class="one_third ">
+                    <article>
+                        <h6 class="heading ">Why sex ed plays a role in the fight against sexual violence</h6>
+                        <p>Congue ipsum nunc rhoncus venenatis neque nullam scelerisque curabitur at nibh pellentesque ullamcorper [&hellip;]</p>
+                        <footer><a class="btn " href="https://ottawacitizen.com/news/local-news/how-does-sex-ed-prevent-sexual-violence-later-in-life ">Read More &raquo;</a></footer>
+                    </article>
+                </li>
+                <li class="one_third ">
+                    <article>
+                        <h6 class="heading ">What Were You Wearing?</h6>
+                        <p>Pulvinar arcu nulla ligula risus porttitor ac rutrum id euismod in diam quisque adipiscing urna sed augue [&hellip;]</p>
+                        <footer><a class="btn " href="https://ohiotoday.org/fall-2018/what-were-you-wearing/ ">Read More &raquo;</a></footer>
+                    </article>
+                </li>
             </ul>
-          </li>
-          <li><a href="#">Level 2</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Link Text</a></li>
-      <li><a href="#">Link Text</a></li>
-      <li><a href="#">Link Text</a></li>
-      <li><a href="#">Long Link Text</a></li>
-    </ul>
+            <!-- ################################################################################################ -->
+            <!-- / main body -->
+            <div class="clear "></div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
     <!-- ################################################################################################ -->
-  </nav>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper bgded" style="background-image:url('images/demo/backgrounds/01.png');">
-  <div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <div class="flexslider basicslider">
-      <ul class="slides">
-        <li>
-          <article>
-            <h3 class="heading">Lorem vulputate diam eget sagittis</h3>
-            <p>Vivamus in ligula ut risus bibendum aenean purus enim euismod nec scelerisque a fringilla et mauris.</p>
-            <footer><a class="btn" href="#">Molestie mauris</a></footer>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3 class="heading">Vivamus elementum auctor nam augue</h3>
-            <p>Sed imperdiet facilisis urna curabitur lectus vestibulum posuere lobortis lorem vivamus quis sapien.</p>
-            <footer><a class="btn" href="#">Rhoncus nulla</a></footer>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3 class="heading">Sodales euismod tellus vestibulum suscipit</h3>
-            <p>Tellus faucibus sit amet placerat sed placerat eu ipsum etiam auctor lectus ut mollis pharetra nisi.</p>
-            <footer><a class="btn" href="#">Lacinia vulputate</a></footer>
-          </article>
-        </li>
-      </ul>
+    <!-- ################################################################################################ -->
+    <div class="wrapper bgded overlay light " style="background-image:url( 'images/demo/backgrounds/03.png'); ">
+        <section class="hoc container clear ">
+            <!-- ################################################################################################ -->
+            <div class="sectiontitle ">
+                <h6 class="heading ">Adipiscing eu sapien</h6>
+            </div>
+            <div class="group testimonials ">
+                <article class="one_half first "><img src="images/demo/100x100.png " alt=" ">
+                    <blockquote>Sodales odio a ultrices feugiat ligula augue tempor orci ullamcorper mattis erat pede at magna praesent nibh felis ultricies vel vestibulum quis sodales nec sem phasellus.</blockquote>
+                    <h6 class="heading ">A. Doe</h6>
+                    <em>Sales &amp; Operations Manager</em></article>
+                <article class="one_half "><img src="images/demo/100x100.png " alt=" ">
+                    <blockquote>Et sem quis felis pharetra convallis proin magna ligula pellentesque eu tincidunt sed ornare tempor nisl suspendisse potenti duis risus risus lacinia nec aliquet non.</blockquote>
+                    <h6 class="heading ">B. Doe</h6>
+                    <em>Business Development Manager</em></article>
+            </div>
+            <!-- ################################################################################################ -->
+        </section>
     </div>
     <!-- ################################################################################################ -->
-  </div>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/02.png');">
-  <main class="hoc container clear"> 
-    <!-- main body -->
     <!-- ################################################################################################ -->
-    <ul class="nospace group services">
-      <li class="one_third first">
-        <article><i class="fa fa-address-card-o"></i>
-          <h6 class="heading">Augue vestibulum</h6>
-          <p>Donec eleifend dignissim erat integer vel dui ac nisi scelerisque malesuada proin ac nulla in rhoncus [&hellip;]</p>
-          <footer><a class="btn" href="#">Read More &raquo;</a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><i class="fa fa-leanpub"></i>
-          <h6 class="heading">Ornare tellus vel</h6>
-          <p>Congue ipsum nunc rhoncus venenatis neque nullam scelerisque curabitur at nibh pellentesque ullamcorper [&hellip;]</p>
-          <footer><a class="btn" href="#">Read More &raquo;</a></footer>
-        </article>
-      </li>
-      <li class="one_third">
-        <article><i class="fa fa-bath"></i>
-          <h6 class="heading">Quam vivamus nunc</h6>
-          <p>Pulvinar arcu nulla ligula risus porttitor ac rutrum id euismod in diam quisque adipiscing urna sed augue [&hellip;]</p>
-          <footer><a class="btn" href="#">Read More &raquo;</a></footer>
-        </article>
-      </li>
-    </ul>
     <!-- ################################################################################################ -->
-    <!-- / main body -->
-    <div class="clear"></div>
-  </main>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row3">
-  <section class="hoc container clear"> 
     <!-- ################################################################################################ -->
-    <div class="sectiontitle">
-      <h6 class="heading">Class aptent taciti</h6>
-    </div>
-    <div class="group">
-      <div class="one_half first">
-        <p><strong>Sociosqu ad litora torquent per</strong></p>
-        <p>Conubia nostra per inceptos himenaeos praesent sit amet mi sed mi adipiscing accumsan aenean tincidunt turpis vel ante donec tortor neque placerat eget aliquam id imperdiet nec odio donec vulputate magna donec erat donec.</p>
-        <p class="btmspace-30">Tortor at massa proin diam in odio curabitur in ipsum nec justo elementum facilisis aliquam auctor nisl [&hellip;]</p>
-        <footer><a class="btn" href="#">Read More &raquo;</a></footer>
-      </div>
-      <div class="one_half">
-        <p><strong>Nec diam ornare dignissim aliquam</strong></p>
-        <a href="#"><img src="images/demo/480x186-vid.png" alt=""></a>
-        <p>Erat volutpat ut sodales sem scelerisque sem integer.</p>
-      </div>
-    </div>
     <!-- ################################################################################################ -->
-  </section>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper bgded overlay light" style="background-image:url('images/demo/backgrounds/03.png');">
-  <section class="hoc container clear"> 
     <!-- ################################################################################################ -->
-    <div class="sectiontitle">
-      <h6 class="heading">Adipiscing eu sapien</h6>
-    </div>
-    <div class="group testimonials">
-      <article class="one_half first"><img src="images/demo/100x100.png" alt="">
-        <blockquote>Sodales odio a ultrices feugiat ligula augue tempor orci ullamcorper mattis erat pede at magna praesent nibh felis ultricies vel vestibulum quis sodales nec sem phasellus.</blockquote>
-        <h6 class="heading">A. Doe</h6>
-        <em>Sales &amp; Operations Manager</em></article>
-      <article class="one_half"><img src="images/demo/100x100.png" alt="">
-        <blockquote>Et sem quis felis pharetra convallis proin magna ligula pellentesque eu tincidunt sed ornare tempor nisl suspendisse potenti duis risus risus lacinia nec aliquet non.</blockquote>
-        <h6 class="heading">B. Doe</h6>
-        <em>Business Development Manager</em></article>
-    </div>
-    <!-- ################################################################################################ -->
-  </section>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row3">
-  <section class="hoc container clear"> 
-    <!-- ################################################################################################ -->
-    <div class="sectiontitle">
-      <h6 class="heading">Aliquam tincidunt aliquet</h6>
-    </div>
-    <div class="group team">
-      <figure class="one_quarter first"><a href="#"><img src="images/demo/320x320.png" alt=""></a>
-        <figcaption>
-          <h6 class="heading">C. Doe</h6>
-          <em>Chief Executive Officer</em>
-          <footer>
-            <ul class="faico clear">
-              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+    <div class="wrapper overlay coloured ">
+        <figure class="hoc clear ">
+            <!-- ################################################################################################ -->
+            <ul class="nospace group logos ">
+                <li class="one_quarter first ">
+                    <a href="# "><img src="images/demo/222x50.png " alt=" "></a>
+                </li>
+                <li class="one_quarter ">
+                    <a href="# "><img src="images/demo/222x50.png " alt=" "></a>
+                </li>
+                <li class="one_quarter ">
+                    <a href="# "><img src="images/demo/222x50.png " alt=" "></a>
+                </li>
+                <li class="one_quarter ">
+                    <a href="# "><img src="images/demo/222x50.png " alt=" "></a>
+                </li>
             </ul>
-          </footer>
-        </figcaption>
-      </figure>
-      <figure class="one_quarter"><a href="#"><img src="images/demo/320x320.png" alt=""></a>
-        <figcaption>
-          <h6 class="heading">D. Doe</h6>
-          <em>General Manager</em>
-          <footer>
-            <ul class="faico clear">
-              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-            </ul>
-          </footer>
-        </figcaption>
-      </figure>
-      <figure class="one_quarter"><a href="#"><img src="images/demo/320x320.png" alt=""></a>
-        <figcaption>
-          <h6 class="heading">E. Doe</h6>
-          <em>Marketing Manager</em>
-          <footer>
-            <ul class="faico clear">
-              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-            </ul>
-          </footer>
-        </figcaption>
-      </figure>
-      <figure class="one_quarter"><a href="#"><img src="images/demo/320x320.png" alt=""></a>
-        <figcaption>
-          <h6 class="heading">F. Doe</h6>
-          <em>Production Manager</em>
-          <footer>
-            <ul class="faico clear">
-              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-            </ul>
-          </footer>
-        </figcaption>
-      </figure>
+            <!-- ################################################################################################ -->
+        </figure>
     </div>
     <!-- ################################################################################################ -->
-    <div class="clear"></div>
-  </section>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper overlay coloured">
-  <figure class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <ul class="nospace group logos">
-      <li class="one_quarter first"><a href="#"><img src="images/demo/222x50.png" alt=""></a></li>
-      <li class="one_quarter"><a href="#"><img src="images/demo/222x50.png" alt=""></a></li>
-      <li class="one_quarter"><a href="#"><img src="images/demo/222x50.png" alt=""></a></li>
-      <li class="one_quarter"><a href="#"><img src="images/demo/222x50.png" alt=""></a></li>
-    </ul>
     <!-- ################################################################################################ -->
-  </figure>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row4 bgded overlay" style="background-image:url('images/demo/backgrounds/04.png');">
-  <footer id="footer" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div class="one_quarter first">
-      <h6 class="heading">Potenti phasellus</h6>
-      <p>Nunc phasellus nec sem ac ligula elementum cursus fusce in augue blandit ligula pharetra.</p>
-      <p>Mattis aliquam erat volutpat vestibulum porta aliquam erat volutpat mauris at tellus at sapien elementum luctus.</p>
-    </div>
-    <div class="one_quarter">
-      <h6 class="heading">Consequat suspendisse</h6>
-      <nav>
-        <ul class="nospace">
-          <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Cookies</a></li>
-          <li><a href="#">Disclaimer</a></li>
-        </ul>
-      </nav>
-      <ul class="faico clear">
-        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-      </ul>
-    </div>
-    <div class="one_quarter">
-      <h6 class="heading">Vestibulum hendrerit</h6>
-      <article>
-        <h2 class="nospace font-x1"><a href="#">Quisque id vestibulum</a></h2>
-        <time class="font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-        <p>Morbi nibh leo laoreet ac auctor blandit aliquam sed sem nullam lacinia purus eget posuere tristique sapien neque blandit nisl eget ultrices [&hellip;]</p>
-      </article>
-    </div>
-    <div class="one_quarter">
-      <h6 class="heading">Enim diam praesent</h6>
-      <ul class="nospace linklist">
-        <li><a href="#">Vehicula auctor nisi sed lacinia</a></li>
-        <li><a href="#">Nunc et porta porta tellus</a></li>
-        <li><a href="#">Sem eget pharetra ligula purus</a></li>
-        <li><a href="#">Amet dui aenean felis pretium</a></li>
-      </ul>
+    <div class="wrapper row4 bgded overlay " style="background-image:url( 'images/demo/backgrounds/04.png'); ">
+        <footer id="footer " class="hoc clear ">
+            <!-- ################################################################################################ -->
+            <div class="one_quarter first ">
+                <h6 class="heading ">Potenti phasellus</h6>
+                <p>Nunc phasellus nec sem ac ligula elementum cursus fusce in augue blandit ligula pharetra.</p>
+                <p>Mattis aliquam erat volutpat vestibulum porta aliquam erat volutpat mauris at tellus at sapien elementum luctus.</p>
+            </div>
+            <div class="one_quarter ">
+                <h6 class="heading ">Consequat suspendisse</h6>
+                <nav>
+                    <ul class="nospace ">
+                        <li><a href="# "><i class="fa fa-lg fa-home "></i></a></li>
+                        <li><a href="# ">About</a></li>
+                        <li><a href="# ">Contact</a></li>
+                        <li><a href="# ">Terms</a></li>
+                        <li><a href="# ">Privacy</a></li>
+                        <li><a href="# ">Cookies</a></li>
+                        <li><a href="# ">Disclaimer</a></li>
+                    </ul>
+                </nav>
+                <ul class="faico clear ">
+                    <li><a class="faicon-facebook " href="# "><i class="fa fa-facebook "></i></a></li>
+                    <li><a class="faicon-twitter " href="# "><i class="fa fa-twitter "></i></a></li>
+                    <li><a class="faicon-dribble " href="# "><i class="fa fa-dribbble "></i></a></li>
+                    <li><a class="faicon-linkedin " href="# "><i class="fa fa-linkedin "></i></a></li>
+                    <li><a class="faicon-google-plus " href="# "><i class="fa fa-google-plus "></i></a></li>
+                    <li><a class="faicon-vk " href="# "><i class="fa fa-vk "></i></a></li>
+                </ul>
+            </div>
+            <div class="one_quarter ">
+                <h6 class="heading ">Vestibulum hendrerit</h6>
+                <article>
+                    <h2 class="nospace font-x1 "><a href="# ">Quisque id vestibulum</a></h2>
+                    <time class="font-xs " datetime="2045-04-06 ">Friday, 6<sup>th</sup> April 2045</time>
+                    <p>Morbi nibh leo laoreet ac auctor blandit aliquam sed sem nullam lacinia purus eget posuere tristique sapien neque blandit nisl eget ultrices [&hellip;]</p>
+                </article>
+            </div>
+            <div class="one_quarter ">
+                <h6 class="heading ">Enim diam praesent</h6>
+                <ul class="nospace linklist ">
+                    <li><a href="# ">Vehicula auctor nisi sed lacinia</a></li>
+                    <li><a href="# ">Nunc et porta porta tellus</a></li>
+                    <li><a href="# ">Sem eget pharetra ligula purus</a></li>
+                    <li><a href="# ">Amet dui aenean felis pretium</a></li>
+                </ul>
+            </div>
+            <!-- ################################################################################################ -->
+        </footer>
     </div>
     <!-- ################################################################################################ -->
-  </footer>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
     <!-- ################################################################################################ -->
-  </div>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<!-- JAVASCRIPTS -->
-<script src="layout/scripts/jquery.min.js"></script>
-<script src="layout/scripts/jquery.backtotop.js"></script>
-<script src="layout/scripts/jquery.mobilemenu.js"></script>
-<script src="layout/scripts/jquery.flexslider-min.js"></script>
+    <div class="wrapper row5 ">
+        <div id="copyright " class="hoc clear ">
+            <!-- ################################################################################################ -->
+            <p class="fl_left ">Copyright &copy; 2016 - All Rights Reserved - <a href="# ">Domain Name</a></p>
+            <p class="fl_right ">Template by <a target="_blank " href="http://www.os-templates.com/ " title="Free Website Templates ">OS Templates</a></p>
+            <!-- ################################################################################################ -->
+        </div>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <a id="backtotop " href="#top "><i class="fa fa-chevron-up "></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="layout/scripts/jquery.min.js "></script>
+    <script src="layout/scripts/jquery.backtotop.js "></script>
+    <script src="layout/scripts/jquery.mobilemenu.js "></script>
+    <script src="layout/scripts/jquery.flexslider-min.js "></script>
 </body>
+
 </html>
