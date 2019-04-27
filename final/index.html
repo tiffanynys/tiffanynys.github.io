@@ -55,14 +55,10 @@ Licence URI: http://www.os-templates.com/template-terms
 
     <!-- 黑 Background -->
     <div class="wrapper row3">
-        <div>
-            <h6 class="heading">Sexual Violence in Hong Kong</h6>
+        <div style="display:table-cell; vertical-align:middle; margin: auto auto">
+            <b><h6 class="heading">Sexual Violence in Hong Kong</h6></b>
             <p>#MeToo movement is an attempt to demonstrate the widespread prevalence of sexual assault and harassment. The waves of this movement started with a hashtag on social media in 2017. Ever since, more and more women came forward on social media
                 with their shared experiences of sexual harassment.
-            </p>
-            <p>The city of Hong Kong has paid more attention to this movement, as hurdle champion Vera Lui Lai Yiu and local artist Louisa Mak Ming Sze has supported #MeToo by sharing their stories to the public.
-            </p>
-            <p>It has been almost two year since the #MeToo movement. As the heat of these stories quiets down, are Hongkongers safer from sexual violence?
             </p>
         </div>
     </div>
@@ -77,8 +73,9 @@ Licence URI: http://www.os-templates.com/template-terms
             <div class="group">
                 <div class="one_half first">
 
-                    <iframe src="https://www.youtube.com/embed/LWctQH4C0P8" frameborder='0' allowfullscreen></iframe>
+                    <iframe weigh="1080" height="480" src="https://www.youtube.com/embed/LWctQH4C0P8" style="position:center" frameborder='0' allowfullscreen></iframe>
                 </div>
+
                 <div class="one_half">
                     <p>Sexual violence refers to the intended offence in action, language or attitude with sexual implications, which make a person feel uncomfortable. </p>
                     <p>By this definition, sexual violence includes not only to rape and indecent assault, but also sexual abuse without body contact. Examples are sexual harassment, dirty jokes, and sex-oriented comment.
@@ -87,78 +84,81 @@ Licence URI: http://www.os-templates.com/template-terms
                     </p>
                     <br>
                 </div>
-                <!-- hk situation -->
-                <div class="sectiontitle">
-                    <h6 class="heading">Situations in Hong Kong</h6>
-                    <p>According to RainLily, Hong Kong’s first sexual violence crisis centre launched in 2000, the situation of female victims is worrying. </p>
-                    <br>
-                </div>
-                <div>
-                    <!-- increasing -->
-                    <h6 class="heading">Increasing number of reported cases of sexual abuse</h6>
-                    <p>The number of cases of ‘Rape’, ‘Indecent assault’ and ‘Sexual harassment’ has gone up. Over the past 18 years, the number of ‘Rape’ cases increased from 128 to 446, which is three times the original. </p>
+            </div>
+            <!-- hk situation -->
+            <div class="sectiontitle">
+                <h6 class="heading">Situations in Hong Kong</h6>
+                <p>According to RainLily, Hong Kong’s first sexual violence crisis centre launched in 2000, the situation of female victims is worrying. </p>
+                <br>
+            </div>
 
-                    <div id="RL Trend" style="min-width: 310px; height:400px;margin:0px">
+            <div>
+                <!-- increasing -->
+                <h6 class="heading">Increasing number of reported cases of sexual abuse</h6>
+                <p>The number of cases of ‘Rape’, ‘Indecent assault’ and ‘Sexual harassment’ has gone up. Over the past 18 years, the number of ‘Rape’ cases increased from 128 to 446, which is three times the original. </p>
 
-                        <head>
-                            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1">
-                            <title>Highcharts Example</title>
+                <div id="RL Trend" style="min-width: 310px; height:400px;margin:0px">
 
-                            <style type="text/css">
+                    <head>
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <title>Highcharts Example</title>
 
-                            </style>
-                        </head>
+                        <style type="text/css">
 
-                        <body>
-                            <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-                            <script type="text/javascript">
-                                Highcharts.setOptions({
-                                    colors: ['#BE1622', '#769A99', '#3C3C3B']
-                                });
+                        </style>
+                    </head>
 
-                                Highcharts.chart('container1', {
-                                    chart: {
-                                        type: 'line'
-                                    },
+                    <body>
+                        <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                        <script type="text/javascript">
+                            Highcharts.setOptions({
+                                colors: ['#BE1622', '#769A99', '#3C3C3B']
+                            });
+
+                            Highcharts.chart('container1', {
+                                chart: {
+                                    type: 'line'
+                                },
+                                title: {
+                                    text: 'Number of cases handled by RainLily per three-year period from 2000 to 2017'
+                                },
+                                subtitle: {
+                                    text: 'Source: RainLily'
+                                },
+                                xAxis: {
+                                    categories: ['2000-2002', '2003-2005', '2006-2008', '2009-2011', '2012-2014', '2015-2017']
+                                },
+                                yAxis: {
                                     title: {
-                                        text: 'Number of cases handled by RainLily per three-year period from 2000 to 2017'
-                                    },
-                                    subtitle: {
-                                        text: 'Source: RainLily'
-                                    },
-                                    xAxis: {
-                                        categories: ['2000-2002', '2003-2005', '2006-2008', '2009-2011', '2012-2014', '2015-2017']
-                                    },
-                                    yAxis: {
-                                        title: {
-                                            text: 'Number of Cases'
-                                        }
-                                    },
-                                    plotOptions: {
-                                        line: {
-                                            dataLabels: {
-                                                enabled: true
-                                            },
-                                            enableMouseTracking: false
-                                        }
-                                    },
-                                    series: [{
-                                        name: 'Rape',
-                                        data: [128, 433, 403, 412, 428, 446]
-                                    }, {
-                                        name: 'Indecent Assault',
-                                        data: [34, 166, 194, 175, 196, 275]
-                                    }, {
-                                        name: 'Sexual Harassment',
-                                        data: [15, 24, 24, 12, 35, 92]
-                                    }]
-                                });
-                            </script>
-                        </body>
-                    </div>
-                    <br><br><br>
-                    <!-- district -->
+                                        text: 'Number of Cases'
+                                    }
+                                },
+                                plotOptions: {
+                                    line: {
+                                        dataLabels: {
+                                            enabled: true
+                                        },
+                                        enableMouseTracking: false
+                                    }
+                                },
+                                series: [{
+                                    name: 'Rape',
+                                    data: [128, 433, 403, 412, 428, 446]
+                                }, {
+                                    name: 'Indecent Assault',
+                                    data: [34, 166, 194, 175, 196, 275]
+                                }, {
+                                    name: 'Sexual Harassment',
+                                    data: [15, 24, 24, 12, 35, 92]
+                                }]
+                            });
+                        </script>
+                    </body>
+                </div>
+                <br><br><br>
+                <!-- district -->
+                <div>
                     <h6 class="heading">Reported cases by district</h6>
                     <p>According to the Social Welfare Department, ‘Yau Tsim Mong’ and ‘Central and Western’ are the two districts with the most reported sexual violence cases last year.</p>
                     <p></p>
@@ -168,7 +168,7 @@ Licence URI: http://www.os-templates.com/template-terms
                     <h6 class="heading">Most of the perpetrators are acquaintances of the victims</h6>
                     <p>RainLily also found that most perpetrators and victims are acquaintances. Around 80% of victims know the perpetrator prior to the incident, whereas strangers only take up 20% of the perpetrators.
                     </p>
-                    <p></p>
+
                     <div id="perpetrator" style="min-width: 310px; height:400px;margin:0px">
 
                         <head>
@@ -343,97 +343,126 @@ Licence URI: http://www.os-templates.com/template-terms
                     </div>
                     <br><br><br>
                     <!-- delay report -->
-                    <h6 class="heading">Teenage girls tend to have longer delay reporting time</h6>
-                    <p>RainLily discovered that female victims serious and common delay reporting phenomenon among sexual violence victims. A relationship between the length of delay reporting time and the victim’s age exist. On average, females above 16
-                        reported their cases 444 days after the incident, while females under 16 delayed 4814 days. </p>
-                    <p></p>
-                    <div id="delay reporting" style="min-width: 310px; height:400px;margin:0px">
+                    <div>
+                        <h6 class="heading">Teenage girls tend to have longer delay reporting time</h6>
+                        <p>RainLily discovered that female victims serious and common delay reporting phenomenon among sexual violence victims. A relationship between the length of delay reporting time and the victim’s age exist. On average, females above
+                            16 reported their cases 444 days after the incident, while females under 16 delayed 4814 days. </p>
+                        <p></p>
+                        <div id="delay reporting" style="min-width: 310px; height:400px;margin:0px">
 
-                        <head>
-                            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1">
-                            <title>Highcharts Example</title>
+                            <head>
+                                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1">
+                                <title>Highcharts Example</title>
 
-                            <style type="text/css">
+                                <style type="text/css">
 
-                            </style>
-                        </head>
+                                </style>
+                            </head>
 
-                        <body>
+                            <body>
 
-                            <div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                                <div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 
 
-                            <script type="text/javascript">
-                                Highcharts.setOptions({
-                                    colors: ['#BE1622', '#769A99']
-                                });
+                                <script type="text/javascript">
+                                    Highcharts.setOptions({
+                                        colors: ['#BE1622', '#769A99']
+                                    });
 
-                                Highcharts.chart('container3', {
-                                    chart: {
-                                        type: 'bar'
-                                    },
-                                    title: {
-                                        text: 'Delay Reporting time: Below 16 VS Above 16'
-                                    },
-                                    xAxis: {
-                                        categories: [
-                                            'Age Group'
-                                        ],
-                                        crosshair: true
-                                    },
-                                    yAxis: {
-                                        min: 0,
+                                    Highcharts.chart('container3', {
+                                        chart: {
+                                            type: 'bar'
+                                        },
                                         title: {
-                                            text: 'Number of Days (Mean)'
-                                        }
-                                    },
-                                    tooltip: {
-                                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                                            '<td style="padding:0"><b>{point.y} </b></td></tr>',
-                                        footerFormat: '</table>',
-                                        shared: true,
-                                        useHTML: true
-                                    },
-                                    plotOptions: {
-                                        column: {
-                                            pointPadding: 0.2,
-                                            borderWidth: 0
-                                        }
-                                    },
-                                    series: [{
-                                        name: 'Below 16',
-                                        data: [4814]
+                                            text: 'Delay Reporting time: Below 16 VS Above 16'
+                                        },
+                                        xAxis: {
+                                            categories: [
+                                                'Age Group'
+                                            ],
+                                            crosshair: true
+                                        },
+                                        yAxis: {
+                                            min: 0,
+                                            title: {
+                                                text: 'Number of Days (Mean)'
+                                            }
+                                        },
+                                        tooltip: {
+                                            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                                                '<td style="padding:0"><b>{point.y} </b></td></tr>',
+                                            footerFormat: '</table>',
+                                            shared: true,
+                                            useHTML: true
+                                        },
+                                        plotOptions: {
+                                            column: {
+                                                pointPadding: 0.2,
+                                                borderWidth: 0
+                                            }
+                                        },
+                                        series: [{
+                                            name: 'Below 16',
+                                            data: [4814]
 
-                                    }, {
-                                        name: 'Above 16',
-                                        data: [444]
+                                        }, {
+                                            name: 'Above 16',
+                                            data: [444]
 
-                                    }]
-                                });
-                            </script>
-                        </body>
+                                        }]
+                                    });
+                                </script>
+                            </body>
+                        </div>
                     </div>
-
-
                 </div>
-            </div>
         </section>
-    </div>
+        </div>
 
-    <!--黑 Recognition -->
-    <div class="wrapper row3 ">
-        <section class="hoc container clear ">
-            <!-- ################################################################################################ -->
-            <div class="sectiontitle ">
-                <h6 class="heading">Recognition of sexual violence</h6>
-                <p>99 females aged 15-29 had took part in a quiz with 8 questions on identifying the acts of sexual violation.
-                </p>
-            </div>
-            <h6 class="heading ">Which of the following act would you consider as an act of sexual violation?</h6>
-            <div class="group team ">
+        <!--黑 Recognition -->
+
+        <style>
+            .acts {
+                position: relative;
+                width: 50%;
+            }
+            
+            .acts:hover .overlay {
+                opacity: 1;
+            }
+            
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+            }
+            
+            .sexualacts {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 20px
+            }
+        </style>
+        <div class="wrapper row3 ">
+            <section class="hoc container clear ">
+                <!-- ################################################################################################ -->
+                <div class="sectiontitle ">
+                    <h6 class="heading">Recognition of sexual violence</h6>
+                    <p>99 females aged 15-29 had took part in a quiz with 8 questions on identifying the acts of sexual violation.
+                    </p>
+                </div>
+                <h6 class="heading ">Which of the following act would you consider as an act of sexual violation?</h6>
+                <!--<div class="group team ">
+            <div class="acts">
                 <figure class="one_quarter first ">
                     <img src="images/sexualviolenceact-01.png" style="max-width:100%" class="image">
                     <div class="overlay">
@@ -461,10 +490,66 @@ Licence URI: http://www.os-templates.com/template-terms
                         <img src="images/sexualviolenceact_pie-04.png" style="max-width:100%" class="image">
                     </div>
                 </figure>
-            </div>
-            <br><br>
+            </div>-->
+                <div class="sexualacts">
+                    <div class="acts">
+                        <img src="images/sexualviolenceact-01.png" style="max-width:100%" class="image">
+                        <div class="overlay">
+                            <img src="images/sexualviolenceact_pie-01.png" style="max-width:100%" class="image">
+                        </div>
+                    </div>
 
-            <div class="group team ">
+                    <div class="acts">
+                        <img src="images/sexualviolenceact-02.png" style="max-width:100%" class="image">
+                        <div class="overlay">
+                            <img src="images/sexualviolenceact_pie-02.png" style="max-width:100%" class="image">
+                        </div>
+                    </div>
+
+                    <div class="acts">
+                        <img src="images/sexualviolenceact-03.png" style="max-width:100%" class="image">
+                        <div class="overlay">
+                            <img src="images/sexualviolenceact_pie-03.png" style="max-width:100%" class="image">
+                        </div>
+                    </div>
+
+                    <div class="acts">
+                        <img src="images/sexualviolenceact-04.png" style="max-width:100%" class="image">
+                        <div class="overlay">
+                            <img src="images/sexualviolenceact_pie-04.png" style="max-width:100%" class="image">
+                        </div>
+                    </div>
+
+                    <div class="acts">
+                        <img src="images/sexualviolenceact-05.png" style="max-width:100%" class="image">
+                        <div class="overlay">
+                            <img src="images/sexualviolenceact_pie-05.png" style="max-width:100%" class="image">
+                        </div>
+                    </div>
+
+                    <div class="acts">
+                        <img src="images/sexualviolenceact-06.png" style="max-width:100%" class="image">
+                        <div class="overlay">
+                            <img src="images/sexualviolenceact_pie-06.png" style="max-width:100%" class="image">
+                        </div>
+                    </div>
+
+                    <div class="acts">
+                        <img src="images/sexualviolenceact-07.png" style="max-width:100%" class="image">
+                        <div class="overlay">
+                            <img src="images/sexualviolenceact_pie-07.png" style="max-width:100%" class="image">
+                        </div>
+                    </div>
+                    <div class="acts">
+                        <img src="images/sexualviolenceact-08.png" style="max-width:100%" class="image">
+                        <div class="overlay">
+                            <img src="images/sexualviolenceact_pie-08.png" style="max-width:100%" class="image">
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+                <!--<div class="group team ">
                 <figure class="one_quarter first ">
                     <img src="images/sexualviolenceact-05.png" style="max-width:100%" class="image">
                     <div class="overlay">
@@ -492,29 +577,125 @@ Licence URI: http://www.os-templates.com/template-terms
                         <img src="images/sexualviolenceact_pie-08.png" style="max-width:100%" class="image">
                     </div>
                 </figure>
+
+            </div>-->
+                <div class="clear "></div>
+                <br><br>
+                <div>
+                    <h6 class="heading">Misconceptions of sexual violations</h6>
+                    <li>Concensual sex: two-thirds of the respondents mistakenly believe that consensual sex is a form of sexual violation</li>
+                    <li>Uncomfortable about being asked for the size of breasts: only 55 out of 99 respondents noticed that this is a form of sexual violation despite there is no phsyical contact.</li>
+                    <li>Forced sex by partner: around 10% of the respondents did not notice that forced sex of their partners can be a form of sexual violence</li>
+                    <li>Being winked at by a stranger: This is not a form of sexual violence, but 11 of the respondents did not believe so</li>
+                </div>
+
+                <br><br>
+                <div>
+                    <h6 class="heading">The awareness of sexual assaults</h6>
+                    <p>Hong Kong young female adults are aware of different forms of sexual violations. 77 of the respondents have scored from 6 to 8 out of 8. Around one-third got 7 out of 8. Those whose scores are from 1-5 out of 8 only takes up a very
+                        small percentage of the respondents. However, only 13 female got all the correct answers. There are still rooms of improvement in sex education.
+                    </p>
+                </div>
+
+
+
+
+                <div id="correct counts" style="min-width: 310px; height:400px;margin:0px">
+
+                    <head>
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <title>Highcharts Example</title>
+
+                        <style type="text/css">
+
+                        </style>
+                    </head>
+
+                    <body>
+
+                        <div id="container4" style="height: 400px"></div>
+
+
+                        <script type="text/javascript">
+                            Highcharts.setOptions({
+                                colors: ['#023E5C', '#769A99', '#25594B', '#455C02', '#3C3C3B', '#778CA6', '#3A93B3', '#5C4802']
+                            });
+
+                            Highcharts.chart('container4', {
+                                chart: {
+                                    type: 'pie',
+                                    options3d: {
+                                        enabled: true,
+                                        alpha: 45
+                                    }
+                                },
+                                title: {
+                                    text: 'Sexual Assault Awareness'
+                                },
+                                subtitle: {
+                                    text: 'Numbers of Correct Answers in 8 Questions about Sexual Violation'
+                                },
+                                plotOptions: {
+                                    pie: {
+                                        innerSize: 100,
+                                        depth: 45
+                                    }
+                                },
+                                series: [{
+                                    name: 'Head counts',
+                                    data: [
+                                        ['8 (100%)', 13],
+                                        ['7 (87.5%)', 34],
+                                        ['6 (75%)', 30],
+                                        ['5 (62.5%)', 11],
+                                        ['4 (50%)', 7],
+                                        ['3 (37.5%)', 3],
+                                        ['2 (25%)', 0],
+                                        ['1 (12.5%)', 1],
+                                        ['0 (0%)', 0]
+                                    ]
+                                }]
+                            });
+                        </script>
+                    </body>
+
+
+
+                </div>
+            </section>
+        </div>
+
+        <!-- 白 Female voices and silence? -->
+        <div class="wrapper row3">
+            <div class="sectiontitle">
+                <h6 class="heading">Reaction towards sexual violence</h6>
+                <p>How will females respond to sexual violence?</p>
             </div>
-            <div class="clear "></div>
-            <br><br>
             <div>
-                <h6 class="heading">Misconceptions of sexual violations</h6>
-                <li>Concensual sex: two-thirds of the respondents mistakenly believe that consensual sex is a form of sexual violation</li>
-                <li>Uncomfortable about being asked for the size of breasts: only 55 out of 99 respondents noticed that this is a form of sexual violation despite there is no phsyical contact.</li>
-                <li>Forced sex by partner: around 10% of the respondents did not notice that forced sex of their partners can be a form of sexual violence</li>
-                <li>Being winked at by a stranger: This is not a form of sexual violence, but 11 of the respondents did not believe so</li>
+                <h6 class="heading">Higher tolerance for acquaintances</h6>
+                <p>The respondents may not report their cases to the police if they are sexually violated. Only 18% of the respondents will report to the police if they are sexually violated. The majority, 81% of the respondents, indicates that other factors
+                    may affect their decision on whether to report to the police. Among those who consider other factors, if they are sexually violated by someone they know, only half of them choose to report to the police.</p>
             </div>
 
-            <br><br>
+            <div id="depends5" class="ft_middle" style="min-width: 310px; height:400px;margin:0px">
+                <figure><img src="images/pie.png" alt="" style="vertical-align: center"></figure>
+            </div>
+        </div>
+
+        <!-- 黑 Sex education in Hong Kong -->
+        <div class="wrapper row3 ">
+            <div class="sectiontitle ">
+                <h6 class="heading ">Sex education in Hong Kong</h6>
+                <p>The ideal VS reality</p>
+            </div>
+
             <div>
-                <h6 class="heading">The awareness of sexual assaults</h6>
-                <p>Hong Kong young female adults are aware of different forms of sexual violations. 77 of the respondents have scored from 6 to 8 out of 8. Around one-third got 7 out of 8. Those whose scores are from 1-5 out of 8 only takes up a very small
-                    percentage of the respondents. However, only 13 female got all the correct answers. There are still rooms of improvement in sex education.
-                </p>
+                <h6 class="heading ">Source of sex education</h6>
+                <p>Only half of the respondents received sex education from their family, however, when we asked which is their ideal source of sex education, more than 88% of respondents wished that they had received sex education from their family.</p>
             </div>
 
-
-
-
-            <div id="correct counts" style="min-width: 310px; height:400px;margin:0px">
+            <div id="ideal source" style="min-width: 310px; height:400px;margin:0px">
 
                 <head>
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -528,104 +709,11 @@ Licence URI: http://www.os-templates.com/template-terms
 
                 <body>
 
-                    <div id="container4" style="height: 400px"></div>
+                    <div id="container6" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
 
 
                     <script type="text/javascript">
-                        Highcharts.setOptions({
-                            colors: ['#023E5C', '#769A99', '#25594B', '#455C02', '#3C3C3B', '#778CA6', '#3A93B3', '#5C4802']
-                        });
-
-                        Highcharts.chart('container4', {
-                            chart: {
-                                type: 'pie',
-                                options3d: {
-                                    enabled: true,
-                                    alpha: 45
-                                }
-                            },
-                            title: {
-                                text: 'Sexual Assault Awareness'
-                            },
-                            subtitle: {
-                                text: 'Numbers of Correct Answers in 8 Questions about Sexual Violation'
-                            },
-                            plotOptions: {
-                                pie: {
-                                    innerSize: 100,
-                                    depth: 45
-                                }
-                            },
-                            series: [{
-                                name: 'Head counts',
-                                data: [
-                                    ['8 (100%)', 13],
-                                    ['7 (87.5%)', 34],
-                                    ['6 (75%)', 30],
-                                    ['5 (62.5%)', 11],
-                                    ['4 (50%)', 7],
-                                    ['3 (37.5%)', 3],
-                                    ['2 (25%)', 0],
-                                    ['1 (12.5%)', 1],
-                                    ['0 (0%)', 0]
-                                ]
-                            }]
-                        });
-                    </script>
-                </body>
-
-
-
-            </div>
-        </section>
-    </div>
-
-    <!-- 白 Female voices and silence? -->
-    <div class="wrapper row3">
-        <div class="sectiontitle">
-            <h6 class="heading">Reaction towards sexual violence</h6>
-            <p>How will females respond to sexual violence?</p>
-        </div>
-        <div>
-            <h6 class="heading">Higher tolerance for acquaintances</h6>
-            <p>The respondents may not report their cases to the police if they are sexually violated. Only 18% of the respondents will report to the police if they are sexually violated. The majority, 81% of the respondents, indicates that other factors
-                may affect their decision on whether to report to the police. Among those who consider other factors, if they are sexually violated by someone they know, only half of them choose to report to the police.</p>
-        </div>
-        <div id="depends5" class="fl_middle" " style="display:table-cell; vertical-align:middle; text-align:center;min-width: 310px; height:400px;margin:0px ">
-            <figure><img src="images/pie.png " alt=" "></figure>
-        </div>
-    </div>
-
-    <!-- 黑 Sex education in Hong Kong -->
-    <div class="wrapper row3 ">
-        <div class="sectiontitle ">
-            <h6 class="heading ">Sex education in Hong Kong</h6>
-            <p>The ideal VS reality</p>
-        </div>
-
-        <div>
-            <h6 class="heading ">Source of sex education</h6>
-            <p>Only half of the respondents received sex education from their family, however, when we asked which is their ideal source of sex education, more than 88% of respondents wished that they had received sex education from their family.</p></div>
-            
-            <div id="ideal source " style="min-width: 310px; height:400px;margin:0px ">
-
-                <head>
-                    <meta http-equiv="Content-Type " content="text/html; charset=utf-8 ">
-                    <meta name="viewport " content="width=device-width, initial-scale=1 ">
-                    <title>Highcharts Example</title>
-    
-                    <style type="text/css ">
-    
-                    </style>
-                </head>
-    
-                <body>
-    
-                    <div id="container6 " style="min-width: 310px; height: 400px; margin: 0 auto "></div>
-    
-    
-    
-                    <script type="text/javascript ">
                         Highcharts.setOptions({
                             colors: ['#BE1622', '#769A99']
                         });
@@ -656,9 +744,9 @@ Licence URI: http://www.os-templates.com/template-terms
                                 }
                             },
                             tooltip: {
-                                headerFormat: '<span style="font-size:10px ">{point.key}</span><table>',
-                                pointFormat: '<tr><td style="color:{series.color};padding:0 ">{series.name}: </td>' +
-                                    '<td style="padding:0 "><b>{point.y} </b></td></tr>',
+                                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                                    '<td style="padding:0"><b>{point.y} </b></td></tr>',
                                 footerFormat: '</table>',
                                 shared: true,
                                 useHTML: true
@@ -672,152 +760,135 @@ Licence URI: http://www.os-templates.com/template-terms
                             series: [{
                                 name: 'Reality',
                                 data: [11, 50, 15, 32, 1, 89, 0, 1]
-    
+
                             }, {
                                 name: 'Ideal',
                                 data: [15, 88, 4, 15, 1, 98, 3, 1]
-    
+
                             }]
                         });
                     </script>
                 </body>
-    
-    
-            </div><br><br>
-        <div>
+
+                <br><br>
+
+                <div>
+                    <h6 class="heading ">Age of receiving sex education</h6>
+                    <p>Most of the female respondents wish that they received sex education earlier. Most of the respondents received sex education between the age of 6 to 12 and 13 to 15. However, nearly 70% of all respondents wish that sex education was
+                        provided when they were under six years old.</p>
+                </div>
+
+                <div id="ideal age " style="min-width: 310px; height:400px;margin:0px ">
+
+                    <head>
+                        <meta http-equiv="Content-Type " content="text/html; charset=utf-8 ">
+                        <meta name="viewport " content="width=device-width, initial-scale=1 ">
+                        <title>Highcharts Example</title>
+
+                        <style type="text/css ">
+
+                        </style>
+                    </head>
+
+                    <body>
+
+                        <div id="container7 " style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto "></div>
+
+                        <script type="text/javascript ">
+                            Highcharts.setOptions({
+                                colors: ['#BE1622', '#769A99', '#D4DCE1', '#3C3C3B']
+                            });
+
+                            Highcharts.chart('container7', {
+                                chart: {
+                                    type: 'bar'
+                                },
+                                title: {
+                                    text: 'Perception on Age of Receiving Sex Education'
+                                },
+                                xAxis: {
+                                    categories: ['Reality', 'Ideal', '13-15', '16-18'],
+                                    title: {
+                                        text: "Comparison "
+                                    }
+                                },
+                                yAxis: {
+                                    min: 0,
+                                    title: {
+                                        text: 'Age of Receiving Sex Education'
+                                    }
+                                },
+                                legend: {
+                                    reversed: true
+                                },
+                                plotOptions: {
+                                    series: {
+                                        stacking: 'normal'
+                                    }
+                                },
+                                series: [{
+                                    name: 'Under 6',
+                                    data: [21, 68]
+                                }, {
+                                    name: '6-12',
+                                    data: [41, 27]
+                                }, {
+                                    name: '13-15',
+                                    data: [31, 2]
+                                }, {
+                                    name: '16-18',
+                                    data: [6, 2]
+                                }]
+                            });
+                        </script>
+                    </body>
+                </div>
+            </div>
+
             <div>
-            <h6 class="heading ">Age of receiving sex education</h6>
-            <p>Most of the female respondents wish that they received sex education earlier. Most of the respondents received sex education between the age of 6 to 12 and 13 to 15. However, nearly 70% of all respondents wish that sex education was provided
-                when they were under six years old.</p></div>
-        
-            <div id="ideal age " style="min-width: 310px; height:400px;margin:0px ">
+                <h6 class="heading ">Age of receiving sexual education</h6>
+                <p>Most of the female respondents wish that they received sex education earlier. Most of the respondents received sex education between the age of 6 to 12 and 13 to 15. However, nearly 70% of all respondents wish that sex education was provided
+                    when they were under six years old.</p>
+            </div>
 
-            <head>
-                <meta http-equiv="Content-Type " content="text/html; charset=utf-8 ">
-                <meta name="viewport " content="width=device-width, initial-scale=1 ">
-                <title>Highcharts Example</title>
-
-                <style type="text/css ">
-
-                </style>
-            </head>
-
-            <body>
-
-                <div id="container7 " style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto "></div>
-
-                <script type="text/javascript ">
-                    Highcharts.setOptions({
-                        colors: ['#BE1622', '#769A99', '#D4DCE1', '#3C3C3B']
-                    });
-
-                    Highcharts.chart('container7', {
-                        chart: {
-                            type: 'bar'
-                        },
-                        title: {
-                            text: 'Perception on Age of Receiving Sex Education'
-                        },
-                        xAxis: {
-                            categories: ['Reality', 'Ideal', '13-15', '16-18'],
-                            title: {
-                                text: "Comparison "
-                            }
-                        },
-                        yAxis: {
-                            min: 0,
-                            title: {
-                                text: 'Age of Receiving Sex Education'
-                            }
-                        },
-                        legend: {
-                            reversed: true
-                        },
-                        plotOptions: {
-                            series: {
-                                stacking: 'normal'
-                            }
-                        },
-                        series: [{
-                            name: 'Under 6',
-                            data: [21, 68]
-                        }, {
-                            name: '6-12',
-                            data: [41, 27]
-                        }, {
-                            name: '13-15',
-                            data: [31, 2]
-                        }, {
-                            name: '16-18',
-                            data: [6, 2]
-                        }]
-                    });
-                </script>
-            </body></div>
-
-        </div>
-       
-
-
-
-
-    </div>
-
-
-    <!-- 白 Seeking help -->
-
-    <div class="wrapper row3 ">
-        <div class="sectiontitle ">
-            <h6 class="heading ">Seeking help</h6>
-            <p>The problem is that female victims may not seek out if they are sexually violated.</p>
-            <p>More family education on sex may be needed. School should also strengthen students' understanding on certain types of sexual violence.</p>
-        </div>
-
-        <div>
-            <h6 class="heading ">The relationship between age and the source of sex education</h6>
-            <p>Most of the female respondents wish that they received sex education earlier. Most of the respondents received sex education between the age of 6 to 12 and 13 to 15. However, nearly 70% of all respondents wish that sex education was provided
-                when they were under six years old.
-            </p>
-            <div id="age source " style="min-width: 310px; height:400px;margin:0px ">
+            <div id="ideal age" style="min-width: 310px; height:400px;margin:0px">
 
                 <head>
-                    <meta http-equiv="Content-Type " content="text/html; charset=utf-8 ">
-                    <meta name="viewport " content="width=device-width, initial-scale=1 ">
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
                     <title>Highcharts Example</title>
 
-                    <style type="text/css ">
+                    <style type="text/css">
 
                     </style>
                 </head>
 
                 <body>
 
+                    <div id="container7" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
 
-                    <div id="container8 " style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto "></div>
-
-
-
-                    <script type="text/javascript ">
+                    <script type="text/javascript">
                         Highcharts.setOptions({
                             colors: ['#BE1622', '#769A99', '#D4DCE1', '#3C3C3B']
                         });
-                        Highcharts.chart('container8', {
+
+                        Highcharts.chart('container7', {
                             chart: {
                                 type: 'bar'
                             },
                             title: {
-                                text: 'Age & Source of Sex Edu'
+                                text: 'Perception on Age of Receiving Sex Education'
                             },
                             xAxis: {
-                                categories: ['Under 6', '6-12', '13-15', '16-18'],
+                                categories: ['Reality', 'Ideal', '13-15', '16-18'],
                                 title: {
-                                    text: "Age of Receiving Sex Education "
+                                    text: "Comparison"
                                 }
                             },
                             yAxis: {
                                 min: 0,
                                 title: {
-                                    text: 'Source of Sex Education'
+                                    text: 'Age of Receiving Sex Education'
                                 }
                             },
                             legend: {
@@ -829,66 +900,158 @@ Licence URI: http://www.os-templates.com/template-terms
                                 }
                             },
                             series: [{
-                                name: 'Family',
-                                data: [1, 1, 1, 1]
+                                name: 'Under 6',
+                                data: [21, 68]
                             }, {
-                                name: 'Family & School',
-                                data: [21, 22, 2, 2]
+                                name: '6-12',
+                                data: [41, 27]
                             }, {
-                                name: 'School',
-                                data: [0, 17, 24, 2]
+                                name: '13-15',
+                                data: [31, 2]
                             }, {
-                                name: 'Others',
-                                data: [0, 1, 4, 1]
+                                name: '16-18',
+                                data: [6, 2]
                             }]
                         });
                     </script>
                 </body>
 
-
             </div>
-            <p>Given that family and school are the most importance source of sex education, these two parties should continue doing their best, as well as consider new means to ease the girls' worries.</p>
-            <p>Meanwhile, the government and NGOs can also work more on the promotion of sex education. They have potential in making positive influence on sex education, but not many respondents notice these two sources.</p>
+
         </div>
 
-    </div>
+
+        <!-- 白 Seeking help -->
+
+        <div class="wrapper row3 ">
+            <div class="sectiontitle ">
+                <h6 class="heading ">Seeking help</h6>
+                <p>The problem is that female victims may not seek out if they are sexually violated.</p>
+                <p>More family education on sex may be needed. School should also strengthen students' understanding on certain types of sexual violence.</p>
+            </div>
+
+            <div>
+                <h6 class="heading ">The relationship between age and the source of sex education</h6>
+                <p>Most of the female respondents wish that they received sex education earlier. Most of the respondents received sex education between the age of 6 to 12 and 13 to 15. However, nearly 70% of all respondents wish that sex education was provided
+                    when they were under six years old.</p>
+            </div>
+
+            <div>
+
+                <div>
+                    <h6 class="heading ">The relationship between age and the source of sex education</h6>
+                    <p>Most of the female respondents wish that they received sex education earlier. Most of the respondents received sex education between the age of 6 to 12 and 13 to 15. However, nearly 70% of all respondents wish that sex education was
+                        provided when they were under six years old.
+                    </p>
+                </div>
+
+                <div id="age source" style="min-width: 310px; height:400px;margin:0px">
+
+                    <head>
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <title>Highcharts Example</title>
+
+                        <style type="text/css">
+
+                        </style>
+                    </head>
+
+                    <body>
 
 
-    </div>
+                        <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
 
-    <!-- 黑 Related articles -->
-    <div class="wrapper bgded overlay ">
-        <div class="sectiontitle ">
-            <h6 class="heading " font-color:white>Related news</h6>
+
+
+                        <script type="text/javascript">
+                            Highcharts.setOptions({
+                                colors: ['#BE1622', '#769A99', '#D4DCE1', '#3C3C3B']
+                            });
+                            Highcharts.chart('container', {
+                                chart: {
+                                    type: 'bar'
+                                },
+                                title: {
+                                    text: 'Age & Source of Sex Edu'
+                                },
+                                xAxis: {
+                                    categories: ['Under 6', '6-12', '13-15', '16-18'],
+                                    title: {
+                                        text: "Age of Receiving Sex Education"
+                                    }
+                                },
+                                yAxis: {
+                                    min: 0,
+                                    title: {
+                                        text: 'Source of Sex Education'
+                                    }
+                                },
+                                legend: {
+                                    reversed: true
+                                },
+                                plotOptions: {
+                                    series: {
+                                        stacking: 'normal'
+                                    }
+                                },
+                                series: [{
+                                    name: 'Family',
+                                    data: [1, 1, 1, 1]
+                                }, {
+                                    name: 'Family & School',
+                                    data: [21, 22, 2, 2]
+                                }, {
+                                    name: 'School',
+                                    data: [0, 17, 24, 2]
+                                }, {
+                                    name: 'Others',
+                                    data: [0, 1, 4, 1]
+                                }]
+                            });
+                        </script>
+                    </body>
+
+
+                </div>
+
+                <div>
+                    <p>Given that family and school are the most importance source of sex education, these two parties should continue doing their best, as well as consider new means to ease the girls' worries.</p>
+                    <p>Meanwhile, the government and NGOs can also work more on the promotion of sex education. They have potential in making positive influence on sex education, but not many respondents notice these two sources.</p>
+                </div>
+            </div>
         </div>
-        <main class="hoc container clear ">
-            <!-- main body -->
-            <!-- ################################################################################################ -->
-            <ul class="nospace group services ">
-                <li class="one_third first ">
-                    <article>
-                        <img class="card-img-top " src="images/women.jpeg " alt="Card_1 image cap ">
-                        <h6 class="heading ">The women helping Hong Kong victims of sexual abuse fight back</h6>
-                        <p>Donec eleifend dignissim erat integer vel dui ac nisi scelerisque malesuada proin ac nulla in rhoncus [&hellip;]</p>
-                        <footer>
-                            <a class="btn " href="https://www.scmp.com/news/hong-kong/community/article/2120683/women-helping-hong-kong-victims-sexual-abuse-fight-back " ">Read More &raquo;</a>
+
+        <!-- 黑 Related articles -->
+        <div class="wrapper bgded overlay ">
+            <div class="sectiontitle ">
+                <h6 class="heading " font-color:white>Related news</h6>
+            </div>
+            <main class="hoc container clear ">
+                <!-- main body -->
+                <!-- ################################################################################################ -->
+                <ul class="nospace group services ">
+                    <li class="one_third first ">
+                        <article>
+                            <img class="card-img-top " src="images/women.jpeg " alt="Card_1 image cap ">
+                            <h6 class="heading ">The women helping Hong Kong victims of sexual abuse fight back</h6>
+                            <footer>
+                                <a class="btn " href="https://www.scmp.com/news/hong-kong/community/article/2120683/women-helping-hong-kong-victims-sexual-abuse-fight-back " ">Read More &raquo;</a>
             </footer>
             </article>
             </li>
             <li class="one_third ">
                 <article>
 
-                    <img class="card-img-top" src="images/sexed.jpg" alt="Card_3 image cap">
+                    <img class="card-img-top " src="images/sexed.jpg " alt="Card_3 image cap ">
                     <h6 class="heading ">Why sex ed plays a role in the fight against sexual violence</h6>
-                    <p>Congue ipsum nunc rhoncus venenatis neque nullam scelerisque curabitur at nibh pellentesque ullamcorper [&hellip;]</p>
                     <footer><a class="btn " href="https://ottawacitizen.com/news/local-news/how-does-sex-ed-prevent-sexual-violence-later-in-life ">Read More &raquo;</a></footer>
                 </article>
             </li>
             <li class="one_third ">
                 <article>
-                    <img class="card-img-top" src="images/wear.png" alt="Card_2 image cap">
+                    <img class="card-img-top " src="images/wear.png " alt="Card_2 image cap ">
                     <h6 class="heading ">What Were You Wearing?</h6>
-                    <p>Pulvinar arcu nulla ligula risus porttitor ac rutrum id euismod in diam quisque adipiscing urna sed augue [&hellip;]</p>
                     <footer><a class="btn " href="https://ohiotoday.org/fall-2018/what-were-you-wearing/ ">Read More &raquo;</a></footer>
                 </article>
             </li>
@@ -898,12 +1061,12 @@ Licence URI: http://www.os-templates.com/template-terms
             <div class="clear "></div>
             </main>
         </div>
-
+        <br><br>
 
         <div class="wrapper row5 ">
             <div id="copyright " class="hoc clear ">
                 <!-- ################################################################################################ -->
-                <p class="fl_left">JOUR2106 Data Visuation
+                <p class="fl_left ">JOUR2106 Data Visuation
                 </p>
                 <!-- ################################################################################################ -->
             </div>
