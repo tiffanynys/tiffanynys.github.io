@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<!--
-Template Name: Carinary
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
--->
+
 <html lang="">
 
 <head>
@@ -22,6 +16,12 @@ Licence URI: http://www.os-templates.com/template-terms
     <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
     <script src="../Highcharts-7.0.3/code/modules/export-data.js"></script>
 
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
 
     <!-- Header -->
     <div class="wrapper row1">
@@ -162,7 +162,8 @@ Licence URI: http://www.os-templates.com/template-terms
                     <h6 class="heading">Reported cases by district</h6>
                     <p>According to the Social Welfare Department, ‘Yau Tsim Mong’ and ‘Central and Western’ are the two districts with the most reported sexual violence cases last year.</p>
                     <p></p>
-                    <div></div>
+                    <div id="container0"></div>
+
                     <br><br><br>
                     <!-- acquaintances -->
                     <h6 class="heading">Most of the perpetrators are acquaintances of the victims</h6>
@@ -298,7 +299,7 @@ Licence URI: http://www.os-templates.com/template-terms
                                         valueSuffix: '%'
                                     },
                                     series: [{
-                                        name: 'Browsers',
+                                        name: 'Percentage',
                                         data: browserData,
                                         size: '60%',
                                         dataLabels: {
@@ -309,7 +310,7 @@ Licence URI: http://www.os-templates.com/template-terms
                                             distance: -30
                                         }
                                     }, {
-                                        name: 'Versions',
+                                        name: 'Percentage',
                                         data: versionsData,
                                         size: '80%',
                                         innerSize: '60%',
@@ -925,5 +926,64 @@ Licence URI: http://www.os-templates.com/template-terms
         <script src="layout/scripts/jquery.mobilemenu.js "></script>
         <script src="layout/scripts/jquery.flexslider-min.js "></script>
 </body>
+
+<script>
+        // Prepare random data
+        var data = [
+            ['CENTRAL & WESTERN', 110],
+            ['SOUTHERN', 19],
+            ['ISLANDS', 25],
+            ['EASTERN', 49],
+            ['WAN CHAI', 58],
+            ['KOWLOON CITY', 66],
+            ['YAU TSIM MONG', 163],
+            ['SHAM SHUI PO', 54],
+            ['WONG TAI SIN', 32],
+            ['SAI KUNG', 20],
+            ['KWUN TONG', 65],
+            ['SHA TIN', 46],
+            ['TAI PO', 28],
+            ['NORTH', 26],
+            ['YUEN LONG', 66],
+            ['TSUEN WAN', 38],
+            ['KWAI TSING', 54],
+            ['TUEN MUN', 39],
+        ];
+        $.getJSON('Hong_Kong_18_Districts.geojson', function(geojson) {
+            // Initiate the chart
+            Highcharts.mapChart('container0', {
+                chart: {
+                    map: geojson
+                },
+                title: {
+                    text: 'Reported sexual violence cases by districts in 2018'
+                },
+                mapNavigation: {
+                    enabled: true,
+                    buttonOptions: {
+                        verticalAlign: 'bottom'
+                    }
+                },
+                colorAxis: {
+                    tickPixelInterval: 100
+                },
+                series: [{
+                    data: data,
+                    keys: ['ENAME', 'value'],
+                    joinBy: 'ENAME',
+                    name: 'Reported cases',
+                    states: {
+                        hover: {
+                            color: '#a4edba'
+                        }
+                    },
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.properties.ENAME}'
+                    }
+                }]
+            });
+        });
+    </script>
 
 </html>
