@@ -1,0 +1,136 @@
+<html>
+
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+
+    <div id="container0"></div>
+
+
+    <div id="RL Trend" style="min-width: 310px; height:400px;margin:0px">
+
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Highcharts Example</title>
+
+            <style type="text/css">
+
+            </style>
+        </head>
+
+        <body>
+            <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+            <script type="text/javascript">
+                Highcharts.setOptions({
+                    colors: ['#BE1622', '#769A99', '#3C3C3B']
+                });
+
+                Highcharts.chart('container1', {
+                    chart: {
+                        type: 'line'
+                    },
+                    title: {
+                        text: 'Number of cases handled by RainLily per three-year period from 2000 to 2017'
+                    },
+                    subtitle: {
+                        text: 'Source: RainLily'
+                    },
+                    xAxis: {
+                        categories: ['2000-2002', '2003-2005', '2006-2008', '2009-2011', '2012-2014', '2015-2017']
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Number of Cases'
+                        }
+                    },
+                    plotOptions: {
+                        line: {
+                            dataLabels: {
+                                enabled: true
+                            },
+                            enableMouseTracking: false
+                        }
+                    },
+                    series: [{
+                        name: 'Rape',
+                        data: [128, 433, 403, 412, 428, 446]
+                    }, {
+                        name: 'Indecent Assault',
+                        data: [34, 166, 194, 175, 196, 275]
+                    }, {
+                        name: 'Sexual Harassment',
+                        data: [15, 24, 24, 12, 35, 92]
+                    }]
+                });
+            </script>
+        </body>
+    </div>
+
+</body>
+
+<script>
+    // Prepare random data
+    var data = [
+        ['CENTRAL & WESTERN', 110],
+        ['SOUTHERN', 19],
+        ['ISLANDS', 25],
+        ['EASTERN', 49],
+        ['WAN CHAI', 58],
+        ['KOWLOON CITY', 66],
+        ['YAU TSIM MONG', 163],
+        ['SHAM SHUI PO', 54],
+        ['WONG TAI SIN', 32],
+        ['SAI KUNG', 20],
+        ['KWUN TONG', 65],
+        ['SHA TIN', 46],
+        ['TAI PO', 28],
+        ['NORTH', 26],
+        ['YUEN LONG', 66],
+        ['TSUEN WAN', 38],
+        ['KWAI TSING', 54],
+        ['TUEN MUN', 39],
+    ];
+    $.getJSON('Hong_Kong_18_Districts.geojson', function(geojson) {
+        // Initiate the chart
+        Highcharts.mapChart('container0', {
+            chart: {
+                map: geojson
+            },
+            title: {
+                text: 'Reported sexual violence cases by districts in 2018'
+            },
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+            colorAxis: {
+                tickPixelInterval: 100
+            },
+            series: [{
+                data: data,
+                keys: ['ENAME', 'value'],
+                joinBy: 'ENAME',
+                name: 'Reported cases',
+                states: {
+                    hover: {
+                        color: '#a4edba'
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.properties.ENAME}'
+                }
+            }]
+        });
+    });
+</script>
+
+</html>
