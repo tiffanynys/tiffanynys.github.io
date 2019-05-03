@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highcharts Example</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/export-data.js"></script>
+    <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+
+
+    <script type="text/javascript">
+        Highcharts.setOptions({
+            colors: ['#023E5C', '#769A99', '#25594B', '#455C02', '#3C3C3B', '#778CA6', '#3A93B3', '#5C4802']
+        });
+        Highcharts.chart('container', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Awareness of Sexual Assault'
+            },
+            subtitle: {
+                text: 'Number of Correct Correct Answers in 8 Questions about Sexual Violation'
+            },
+            xAxis: {
+                categories: ['Number of Correct Questions'],
+                labels: {
+                    rotation: 270
+                },
+                title: {
+                    text: null
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Head Counts',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            tooltip: {
+                valueSuffix: ' '
+            },
+            plotOptions: {
+                bar: {
+                    dataLabels: {
+                        enabled: true
+                    }
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'top',
+                x: -5,
+                y: 60,
+                floating: true,
+                borderWidth: 1,
+                backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+                shadow: true
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: '0',
+                data: [0]
+            }, {
+                name: '1',
+                data: [1]
+            }, {
+                name: '2',
+                data: [0]
+            }, {
+                name: '3',
+                data: [3]
+            }, {
+                name: '4',
+                data: [7]
+            }, {
+                name: '5',
+                data: [11]
+            }, {
+                name: '6',
+                data: [30]
+            }, {
+                name: '7',
+                data: [34]
+            }, {
+                name: '8',
+                data: [13]
+            }]
+
+
+        });
+    </script>
+</body>
+
+</html>

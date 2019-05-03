@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highcharts Example</title>
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/series-label.js"></script>
+    <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+    <script type="text/javascript">
+        Highcharts.setOptions({
+            colors: ['#BE1622', '#3C3C3B', '#D4DCE1', '#769A99']
+        });
+        Highcharts.chart('container', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Reaction Towards Sexual Violence'
+            },
+            subtitle: {
+                text: "Whether the victims report to the police?"
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Percentage',
+                colorByPoint: true,
+                data: [{
+                    name: 'Yes',
+                    y: 18
+                }, {
+                    name: 'No',
+                    y: 1
+                }, {
+                    name: 'Depends, but will still report acquaintance',
+                    y: 38
+                }, {
+                    name: 'Depends, but will not report acquaintance',
+                    y: 43
+                }]
+            }]
+        });
+    </script>
+</body>
+
+</html>
