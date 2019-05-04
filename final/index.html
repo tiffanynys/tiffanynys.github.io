@@ -29,7 +29,7 @@
             <div id="logo" class="fl_left">
                 <h1>
                     <p>Team 2</p>
-                    <p>Erica Chin, Tiffany Ng, Hanyue Sun and Midori Ge <br> 27th April, 2019</p>
+                    <p>Erica Chin, Tiffany Ng, Hanyue Sun and Midori Ge <br> 4th May, 2019</p>
                     </a>
                 </h1>
             </div>
@@ -480,6 +480,65 @@
                     </p>
                 </div>
                 <h6 class="heading " style="color:white">Which of the following act would you consider as an act of sexual violation?</h6>
+
+                <style>
+                    mark {
+                        background: rgba(1, 1, 1, 0);
+                        color: #D4DCE1;
+                        font-size: 40px;
+                        border-radius: 5px;
+                    }
+                    
+                    button {
+                        background-color: #769A99;
+                        color: #D4DCE1;
+                        border-radius: 5px;
+                    }
+                    
+                    button:hover {
+                        background-color: #769A99;
+                        color: #D4DCE1;
+                        border-radius: 5px;
+                    }
+                    
+                    .Q1-4 {
+                        grid-area: S1;
+                        min-height: 100px;
+                    }
+                    
+                    @media (min-width: 300px) {
+                        .Q1-4 {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-template-rows: auto;
+                        }
+                    }
+                </style>
+
+                <body data loaded="true">
+                    <div class="Q1-4">
+                        <button class="ui button active" ; id="Q1 " onclick="displayCase(this)"> A stranger touched your privates on the MTR without your permission</button><br>
+                        <button id="Q2 "> A stranger winked at you and smiled</button><br>
+                        <button id="Q3 "> Your uncle patted your butt and you feel discomfort</button><br>
+                        <button id="Q4 "> Consensual sex</button>
+                        <button id="Q5 "> Your boss told you a sexual joke which makes you feel uncomfortable</button><br>
+                        <button id="Q6 "> Your friend touched your breasts and you feel discomfort</button><br>
+                        <button id="Q7 "> Your classmate asked about the size of your breasts which makes you feel uncomfortable</button><br>
+                        <button id="Q8 "> Your intimate partner forced you to have sex with them even though you said no</button><br>
+                    </div>
+                    <div>
+                        <p style="color:white">Click on the buttons and check your understanding!</p>
+                        <mark><span id="result "></span></mark>
+                    </div>
+                    <br>
+                    <br>
+                </body>
+
+                <div>
+                    <h6 style="color:white">How do Hong Kong females think about these acts?</h6>
+                </div>
+
+
                 <!--<div class="group team ">
             <div class="acts">
                 <figure class="one_quarter first ">
@@ -507,7 +566,7 @@
                     </div>
                 </figure>
             </div>-->
-                <div class="sexualacts">
+                <div class="sexualacts" style="text-align: center">
                     <div class="acts">
                         <img src="images/sexualviolenceact-01.png" style="max-width:100%" class="image">
                         <p style="color:white">A stranger touched your privates on the MTR without your permission</p>
@@ -1203,5 +1262,49 @@ Highcharts.mapChart('container', {
 });
 });
 </script>
+
+<script>
+        document.getElementById("Q1 ").onclick = displayA1;
+    
+        function displayA1(id) {
+            document.getElementById("result ").innerHTML = "BINGO ";
+        }
+        document.getElementById("Q2 ").onclick = displayA2;
+    
+        function displayA2(id) {
+            document.getElementById("result ").innerHTML = "Incorrect ";
+        }
+        document.getElementById("Q3 ").onclick = displayA3;
+    
+        function displayA3(id) {
+            document.getElementById("result ").innerHTML = "BINGO ";
+        }
+        document.getElementById("Q4 ").onclick = displayA4;
+    
+        function displayA4(id) {
+            document.getElementById("result ").innerHTML = "Incorrect ";
+        }
+        document.getElementById("Q5 ").onclick = displayA5;
+    
+        function displayA5(id) {
+            document.getElementById("result ").innerHTML = "BINGO ";
+        }
+        document.getElementById("Q6 ").onclick = displayA6;
+    
+        function displayA6(id) {
+            document.getElementById("result ").innerHTML = "BINGO ";
+        }
+        document.getElementById("Q7 ").onclick = displayA7;
+    
+        function displayA7(id) {
+            document.getElementById("result ").innerHTML = "BINGO ";
+        }
+        document.getElementById("Q8 ").onclick = displayA8;
+    
+        function displayA8(id) {
+            document.getElementById("result ").innerHTML = "BINGO ";
+    
+        }
+    </script>
 
 </html>
