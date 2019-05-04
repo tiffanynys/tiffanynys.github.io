@@ -17,7 +17,7 @@
 
 
     <style>
-    .cal1,
+        .cal1,
         .cal2 {
             display: grid;
             background-color: white;
@@ -27,7 +27,8 @@
         
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+            min-width: 150px;
+            grid-template-columns: 1fr 1fr
         }
         
         #num1,
@@ -46,7 +47,13 @@
             min-width: 30%;
             height: 20px;
         }
-    }
+        
+        @media (min-width: 300px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
     </style>
 
 
@@ -57,7 +64,7 @@
     <div class="container">
 
         <div class="cal1">
-            <h2>Your goal!!!</h2>
+            <h2>Set your goal!!!</h2>
             <p>How much weight do you want to lose? <br>
                 <input id="num1"> kg
                 <button id="ans1">Calculate</button>
