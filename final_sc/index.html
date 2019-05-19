@@ -202,23 +202,23 @@
                                         colors: ['#BE1622', '#769A99', '#3C3C3B']
                                     }),
                                     categories = [
-                                        'Acquaintance',
-                                        'Stranger',
-                                        'Others'
+                                        '熟人',
+                                        '陌生人',
+                                        '其他'
                                     ],
                                     data = [{
                                         y: 78.6,
                                         color: '#769A99',
                                         drilldown: {
-                                            name: 'Acquaintance',
+                                            name: '熟人',
                                             categories: [
-                                                'Peer or Friend',
-                                                'Intimate Partner',
-                                                'Work Relationship',
-                                                'Parent, Sibling or Relative',
-                                                'Online Acquaintance',
-                                                'Caregiver (non-related)',
-                                                'Neighbour'
+                                                '同伴或朋友',
+                                                '亲密伴侶',
+                                                '工作伙伴',
+                                                '父母、兄弟或亲戚',
+                                                '网友',
+                                                '看护人（无血缘关系）',
+                                                '邻居'
                                             ],
                                             data: [
                                                 36.3,
@@ -234,9 +234,9 @@
                                         y: 17.5,
                                         color: '#BE1622',
                                         drilldown: {
-                                            name: 'Stranger',
+                                            name: '陌生人',
                                             categories: [
-                                                'Stranger'
+                                                '陌生人'
                                             ],
                                             data: [
                                                 17.5
@@ -246,9 +246,9 @@
                                         y: 3.9,
                                         color: '#3C3C3B',
                                         drilldown: {
-                                            name: 'Others',
+                                            name: '其他',
                                             categories: [
-                                                'Others'
+                                                '其他'
                                             ],
                                             data: [
                                                 3.9
@@ -287,10 +287,10 @@
                                         type: 'pie'
                                     },
                                     title: {
-                                        text: "Victim-perpetrator Relationship "
+                                        text: '受害者与施暴者的关系'
                                     },
                                     subtitle: {
-                                        text: 'Source: RainLily</a>'
+                                        text: '资料来源：风雨兰'
                                     },
                                     plotOptions: {
                                         pie: {
@@ -302,7 +302,7 @@
                                         valueSuffix: '%'
                                     },
                                     series: [{
-                                        name: 'Percentage',
+                                        name: '百分比',
                                         data: browserData,
                                         size: '60%',
                                         dataLabels: {
@@ -313,7 +313,7 @@
                                             distance: -30
                                         }
                                     }, {
-                                        name: 'Percentage',
+                                        name: '百分比',
                                         data: versionsData,
                                         size: '80%',
                                         innerSize: '60%',
@@ -379,18 +379,21 @@
                                             type: 'bar'
                                         },
                                         title: {
-                                            text: 'Delay Reporting time: Below 16 VS Above 16'
+                                            text: '16岁以上及以下女性延迟求助倾向的比较'
+                                        },
+                                        subtitle: {
+                                            text: '资料来源：风雨兰'
                                         },
                                         xAxis: {
                                             categories: [
-                                                'Age Group'
+                                                '年龄组别'
                                             ],
                                             crosshair: true
                                         },
                                         yAxis: {
                                             min: 0,
                                             title: {
-                                                text: 'Number of Days (Mean)'
+                                                text: '平均天数'
                                             }
                                         },
                                         tooltip: {
@@ -408,10 +411,10 @@
                                             }
                                         },
                                         series: [{
-                                            name: 'Below 16',
+                                            name: '16岁或以下',
                                             data: [4814]
                                         }, {
-                                            name: 'Above 16',
+                                            name: '16岁或以上',
                                             data: [444]
                                         }]
                                     });
@@ -711,13 +714,13 @@
                                     type: 'bar'
                                 },
                                 title: {
-                                    text: 'Awareness of Sexual Assault'
+                                    text: '受访者对性侵犯的认知'
                                 },
                                 subtitle: {
-                                    text: 'Number of Correct Correct Answers in 8 Questions about Sexual Violation'
+                                    text: '她们在八道关于性侵犯的题目中答对了多少题？'
                                 },
                                 xAxis: {
-                                    categories: ['Number of Correct Questions'],
+                                    categories: ['答对题数'],
                                     labels: {
                                         rotation: 270
                                     },
@@ -728,7 +731,7 @@
                                 yAxis: {
                                     min: 0,
                                     title: {
-                                        text: 'Head Counts',
+                                        text: '人数',
                                         align: 'high'
                                     },
                                     labels: {
@@ -843,10 +846,10 @@
                                 type: 'pie'
                             },
                             title: {
-                                text: 'Reaction Towards Sexual Violation'
+                                text: '受访者就性侵行为的应对'
                             },
                             subtitle: {
-                                text: "Whether the victims report to the police? "
+                                text: "她们会选择向警方报案吗？"
                             },
                             tooltip: {
                                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -865,19 +868,19 @@
                                 }
                             },
                             series: [{
-                                name: 'Percentage',
+                                name: '百分比',
                                 colorByPoint: true,
                                 data: [{
-                                    name: 'Yes',
+                                    name: '会选择向警方报案',
                                     y: 18
                                 }, {
-                                    name: 'No',
+                                    name: '不会选择向警方报案',
                                     y: 1
                                 }, {
-                                    name: 'Depends, but will still report acquaintance',
+                                    name: '视乎情况，经考虑后仍会向警方举报相熟的施暴者',
                                     y: 38
                                 }, {
-                                    name: 'Depends, but will not report acquaintance',
+                                    name: '视乎情况，但不会向警方举报相熟的施暴者',
                                     y: 43
                                 }]
                             }]
