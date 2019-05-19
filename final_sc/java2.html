@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>How many sexual violence cases were reported in your district in 2018?</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Lato';
+            font-size: 15px;
+            font-weight: normal;
+            background-color: rgb(255, 196, 0);
+            color: rgb(43, 43, 43);
+        }
+        
+        mark {
+            color: #D4DCE1;
+            font-size: 40px;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #769A99;
+            color: #D4DCE1;
+            border-radius: 5px;
+        }
+        
+        button:hover {
+            background-color: #769A99;
+            color: #D4DCE1;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<style>
+        .Q1-4 {
+        grid-area: S1;
+        min-height: 100px;
+    }
+    
+    @media (min-width: 100px) {
+        .Q1-4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+</style>
+
+<body data loaded="true">
+    <h1>How many sexual violence cases were reported in your district in 2018?</h1>
+    <br>
+    <p>Find out how many sexual violence cases were reported last year in your district below</p>
+    <h2>Which of the following do you consider as sexual violation?</h2>
+    <br>
+    <div class="Q1-4">
+        <button class="ui button active" ; id="Q1" onclick="displayCase(this)"> A stranger touched your privates on the MTR without your permission</button><br>
+        <button id="Q2"> A stranger winked at you and smiled</button><br>
+        <button id="Q3"> Your uncle patted your butt and you feel discomfort</button><br>
+        <button id="Q4"> Consensual sex</button>
+        <button id="Q5"> Your boss told you a sexual joke which makes you feel uncomfortable</button><br>
+        <button id="Q6"> Your friend touched your breasts and you feel discomfort</button><br>
+        <button id="Q7"> Your classmate asked about the size of your breasts which makes you feel uncomfortable</button><br>
+        <button id="Q8"> Your intimate partner forced you to have sex with them even though you said no</button><br>
+    </div>
+    <div>
+        <p>Click on the buttons to see if you are right!</p>
+        <mark><span id="result"></span></mark>
+    </div>
+    <br>
+    <br>
+</body>
+
+<script>
+    document.getElementById("Q1").onclick = displayA1;
+
+    function displayA1(id) {
+        document.getElementById("result").innerHTML = "BINGO";
+    }
+    document.getElementById("Q2").onclick = displayA2;
+
+    function displayA2(id) {
+        document.getElementById("result").innerHTML = "Incorrect";
+    }
+    document.getElementById("Q3").onclick = displayA3;
+
+    function displayA3(id) {
+        document.getElementById("result").innerHTML = "BINGO";
+    }
+    document.getElementById("Q4").onclick = displayA4;
+
+    function displayA4(id) {
+        document.getElementById("result").innerHTML = "Incorrect";
+    }
+    document.getElementById("Q5").onclick = displayA5;
+
+    function displayA5(id) {
+        document.getElementById("result").innerHTML = "BINGO";
+    }
+    document.getElementById("Q6").onclick = displayA6;
+
+    function displayA6(id) {
+        document.getElementById("result").innerHTML = "BINGO";
+    }
+    document.getElementById("Q7").onclick = displayA7;
+
+    function displayA7(id) {
+        document.getElementById("result").innerHTML = "BINGO";
+    }
+    document.getElementById("Q8").onclick = displayA8;
+
+    function displayA8(id) {
+        document.getElementById("result").innerHTML = "BINGO";
+
+    }
+</script>
+
+</html>
