@@ -1,0 +1,28 @@
+/* General */
+
+a {
+    font-family: "";
+    font-size: px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+
+/* Navigation bar */
+
+#top-header {
+    padding: 6px 0 6px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.fixed-position {
+    position: fixed;
+}

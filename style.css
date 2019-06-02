@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+#container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    font-family: "Lato";
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    background-color: black;
+    font-family: "Lato";
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font: white;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 1px 1px;
+    .nav1 {
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+    .nav1 li {
+        display: inline-block;
+        font-size: 15px;
+        padding: 20px;
+    }
+    @at-root {
+        .Wrapper {
+            width: 80%;
+            max-width: 90rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include media-breakpoint-down(sm) {
+            .Wrapper--reset\@sm-down {
+                width: 100%;
+            }
+        }
+        h1,
+        h2,
+        h3 {
+            font-family: "lato";
+            margin-bottom: 0;
+        }
+        #header {
+            width: 900px;
+            height: 800px;
+            padding: 10px 10px 10px 10px;
+        }
+        #title {
+            width: 150px;
+        }
+        #main {
+            width: 750px;
+        }
+        #footer {
+            clear: both;
+        }
+        .Tag {
+            color: #000000;
+            text-shadow: 1px 1px 0 rgba(#6fd1bd, 1);
+            font-weight: 700;
+            line-height: 1;
+            position: relative;
+            display: inline-block;
+            padding-left: unitSize(1);
+            padding-right: unitSize(1);
+        }
+        .tag:hover {
+            position: relative;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1em;
+            bottom: 0;
+            margin: auto;
+            border-radius: 0.2rem;
+            transform: scale(1.05, 2.4);
+            transition-delay: 0s;
+            transition-duration: 0.1s;
+            transition: all 0.8s 0.4s ease-in-out;
+        }
+    }
+}
+
+.l-Section-title,
+.l-Section-content {
+    margin-top: unitSize(4);
+}
+
+
+/* Animation */
+
+$b-shadowSize: 4px;
