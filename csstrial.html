@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <style>
+         :root {
+            --mainColor: #6fd1bd;
+        }
+        
+        body {
+            color: #000;
+            text-shadow: 1px 1px 0 rgba(white, 0.4);
+            font-size: 1.6rem;
+            position: relative;
+            display: inline-block;
+            font-weight: 900;
+            display: inline;
+            padding-left: 0;
+            padding-right: 0;
+            background: transparent !important;
+            color: #000 !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
+        
+        a {
+            height: 1.5;
+            letter-spacing: 0.008em;
+            color: #000;
+            text-decoration: none;
+            transition: background-size .2s;
+            padding-left: unitSize(1);
+            padding-right: unitSize(1);
+        }
+        
+        a:hover {
+            background: linear-gradient( to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+            background-position: 0 100%;
+            background-repeat: repeat-x;
+            background-size: 0 4px;
+            background-size: 4px 50px;
+            transition-delay: 0s;
+            transition-duration: 0.2s;
+            height: transform: scale(1.05, 2.4);
+        }
+    </style>
+
+    <p>Flapjacks on a <a href="#">sunny warm</a> afternoon.</p>
+</body>
+
+</html>

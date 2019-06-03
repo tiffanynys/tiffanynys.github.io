@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+body {
+    font-family: "Lato";
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0;
+}
+
+
+/* Underline hyperlink */
+
+.underline {
+    border-bottom: 1.5px solid #FF7C93;
+    color: black;
+    padding-bottom: 0em;
+    display: relative;
+    height: 100vh;
+    text-decoration: none;
+    /* no underline */
+}
+
+.underline:hover {
+    border-bottom: 1.5px solid #2A86FF;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 0em;
+    text-decoration: none;
+    transition-delay: 0s;
+    transition-duration: 0.1s;
+    text-decoration: none;
+    /* no underline */
+}
+
+
+/* Name with shade */
+
+.name {
+    font-weight: 700;
+    font-size: 45px;
+    color: black;
+    position: relative;
+    text-shadow: 4px 4px 0 #FF7C93;
+    text-decoration: none;
+    /* no underline */
+}
+
+.name:hover {
+    text-shadow: -4px -4px 0 #2A86FF;
+    text-decoration: none;
+    /* no underline */
+}
+
+
+/* Color*/

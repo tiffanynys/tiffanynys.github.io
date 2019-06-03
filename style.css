@@ -30,7 +30,7 @@
 .nav li {
     display: inline-block;
     font-size: 15px;
-    padding: 1px 1px;
+    padding: 0px 1px 0px 0px;
     .nav1 {
         position: relative;
         width: 100%;
