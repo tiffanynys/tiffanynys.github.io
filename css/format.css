@@ -77,6 +77,7 @@ h2 {
 /* Image responsive */
 
 .responsive {
+    width: 250px;
     max-width: 100%;
     height: auto;
 }
