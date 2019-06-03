@@ -30,7 +30,6 @@ h3 {
     text-decoration: none;
     transition-delay: 0s;
     transition-duration: 0.1s;
-    text-decoration: none;
     /* no underline */
 }
 
@@ -50,6 +49,16 @@ h3 {
 .name:hover {
     text-shadow: -4px -4px 0 #2A86FF;
     text-decoration: none;
+    /* no underline */
+}
+
+
+/* Menu */
+
+#menu-normal {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
     /* no underline */
 }
 
