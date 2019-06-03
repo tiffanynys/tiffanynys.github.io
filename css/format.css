@@ -9,6 +9,14 @@ h3 {
     margin-bottom: 0;
 }
 
+h2 {
+    font-weight: 700;
+    color: black;
+    position: relative;
+    text-shadow: 2px 2px 0 #FF7C93;
+    text-decoration: none;
+}
+
 
 /* Underline hyperlink */
 
@@ -38,7 +46,7 @@ h3 {
 
 .name {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 55px;
     color: black;
     position: relative;
     text-shadow: 4px 4px 0 #FF7C93;
@@ -64,3 +72,11 @@ h3 {
 
 
 /* Color*/
+
+
+/* Image responsive */
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}

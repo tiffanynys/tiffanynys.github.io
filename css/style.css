@@ -31,6 +31,16 @@
                                                 
                                                 #menu-normal {
                                                     float: right;
+                                                    font-weight: 700;
+                                                    color: black;
+                                                    position: relative;
+                                                    text-shadow: 2px 2px 0 #FF7C93;
+                                                    text-decoration: none;
+                                                }
+                                                
+                                                .menu:hover {
+                                                    text-shadow: -2px -2px 0 #2A86FF;
+                                                    text-decoration: none;
                                                 }
                                                 
                                                 #menu-normal li {
