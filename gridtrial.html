@@ -5,24 +5,71 @@
 </head>
 
 <style>
-    .containter {
-        display:
+@media (min-width: 600px) {
+        #begin {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: auto;
+            grid-template-areas: /* prettier-ignore */
+            "sh mc"
+        }
+        #pjbegin {
+            display: grid;
+            text-align: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: /* prettier-ignore */
+            "p1 p2 p3"
+        }
     }
-    
-    .subheading {}
-    
-    .main {}
+}
+.subhead {
+    grid-area: "sh";
+}
+.main {
+    grid-area: "mc";
+}
+.pj1,
+.pj2,
+.pj3 {
+    width: 250px;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    border: black 1px dotted;
+    margin: 5px;
+}
+.pj1 {
+    grid-area: "p1";
+}
+.pj2 {
+    grid-area: "p2";
+}
+.pj3 {
+    grid-area: "p3";
+}
 </style>
 
 <body>
-    <section id="ABOUT" class="">
-        <h2>ABOUT</h2>
-        <p>111</p>
+    <section id="ABOUT">
+        <div id="begin">
+            <h2 class="subhead">ABOUT</h2>
+            <p class="main">111</p>
+        </div>
     </section>
 
-    <section>
-        <H2>Projects</H2>
-        <div></div>
+    <section id="PROJECTS">
+        <div id="begin">
+            <H2 class="subhead">Projects</H2>
+            <div class="main">
+                <div id="pjbegin">
+                    <div class="pj1"></div>
+                    <div class="pj2"></div>
+                    <div class="pj3"></div>
+                </div>
+
+            </div>
+        </div>
     </section>
 </body>
 
