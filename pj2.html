@@ -1,12 +1,14 @@
 <html>
 
 <head>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+    </style>
 </head>
 <style>
     .container {
         position: relative;
-        width: 50%;
+        width: 100%;
     }
     
     .image {
@@ -25,7 +27,7 @@
         width: 100%;
         opacity: 0;
         transition: .5s ease;
-        background-color: #008CBA;
+        background-color: #6AB7DE;
     }
     
     .container:hover .overlay {
@@ -33,8 +35,9 @@
     }
     
     .text {
+        font-family: "Lato";
         color: white;
-        font-size: 20px;
+        font-size: 16px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -46,21 +49,12 @@
 </style>
 
 <body>
-
     <div class="container">
         <img src="image/FO2D.png" alt="Avatar" class="image">
         <div class="overlay">
-            <div class="text">Hello World</div>
+            <div class="text"><a href="O2D_R.html">From Object to Data</a></div>
         </div>
     </div>
-    <div class="container">
-        <img src="image/GShack.png" alt="Avatar" class="image">
-        <div class="overlay">
-            <div class="text">Hello World</div>
-        </div>
-    </div>
-
-
 </body>
 
 </html>
