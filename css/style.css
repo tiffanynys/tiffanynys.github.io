@@ -1,102 +1,117 @@
-                                                /* container */
-                                                /* the overall top navigation bar */
-                                                
-                                                #top-header {
-                                                    /* background: #F8EFEA; */
-                                                    padding: 6px 0 6px;
-                                                    width: 100%;
-                                                    top: 0;
-                                                    left: 0;
-                                                    z-index: 20;
-                                                }
-                                                
-                                                #top-header nav ul li a,
-                                                #top-header nav ul li,
-                                                #menu-toggle a {
-                                                    font-weight: 500;
-                                                    font-size: 18px;
-                                                    font: black;
-                                                    text-decoration: none;
-                                                    /* no underline */
-                                                    line-height: 23px;
-                                                    text-transform: uppercase;
-                                                    list-style: none;
-                                                    position: relative;
-                                                }
-                                                
-                                                .fixed-position {
-                                                    position: fixed;
-                                                }
-                                                /* The normal menu */
-                                                
-                                                #menu-normal {
-                                                    float: right;
-                                                    font-weight: 700;
-                                                    color: black;
-                                                    position: relative;
-                                                    text-shadow: 2px 2px 0 #FF7C93;
-                                                    text-decoration: none;
-                                                }
-                                                
-                                                .menu:hover {
-                                                    text-shadow: -2px -2px 0 #2A86FF;
-                                                    text-decoration: none;
-                                                }
-                                                
-                                                #menu-normal li {
-                                                    float: left;
-                                                    margin-right: 40px;
-                                                    text-decoration: none;
-                                                    /* no underline */
-                                                }
-                                                
-                                                @media (max-width: 768px) {
-                                                    #menu-normal,
-                                                    .icon,
-                                                    .icon img {
-                                                        display: none;
-                                                    }
-                                                }
-                                                /* Title-container */
-                                                
-                                                .title-container {
-                                                    display: grid;
-                                                    grid-template-columns: 3fr 1fr;
-                                                    grid-template-areas: "TC1 TC2";
-                                                }
-                                                
-                                                .title-container-head {
-                                                    grid-area: TC1;
-                                                }
-                                                
-                                                .title-container-main {
-                                                    grid-area: TC2;
-                                                }
-                                                /* Title-banner */
-                                                
-                                                .Title {
-                                                    @include responsive-font(8vw, 42px, 75px, 50px);
-                                                    font-weight: 900;
-                                                    line-height: 1.1;
-                                                    margin-top: 0;
-                                                    margin-bottom: 0;
-                                                    text-transform: uppercase;
-                                                    display: inline-block;
-                                                    &-sub {
-                                                        font-size: 0.34em;
-                                                        letter-spacing: 0.16em;
-                                                        font-weight: 400;
-                                                        text-transform: none;
-                                                        display: block;
-                                                        margin-top: unitSize(1.5);
-                                                        padding-top: unitSize(2);
-                                                        border-top: 0.45em solid;
-                                                    }
-                                                }
-                                                /* Layout */
-                                                
-                                                .l-Wrapper {
-                                                    top: 80px;
-                                                    margin-left: auto;
-                                                    margin-right: auto;
-                                                }
+                        /* container */
+                            /* the overall top navigation bar */
+                            
+                            #top-header {
+                                /* background: #F8EFEA; */
+                                padding: 6px 0 6px;
+                                width: 100%;
+                                top: 0;
+                                left: 0;
+                                z-index: 20;
+                            }
+                            
+                            #top-header nav ul li a,
+                            #top-header nav ul li,
+                            #menu-toggle a {
+                                font-weight: 500;
+                                font-size: 18px;
+                                font: black;
+                                text-decoration: none;
+                                /* no underline */
+                                line-height: 23px;
+                                text-transform: uppercase;
+                                list-style: none;
+                                position: relative;
+                            }
+                            
+                            .fixed-position {
+                                position: fixed;
+                            }
+                            /* The normal menu */
+                            
+                            #menu-normal {
+                                float: right;
+                                font-weight: 700;
+                                color: black;
+                                position: relative;
+                                text-shadow: 2px 2px 0 #6AB7DE;
+                                text-decoration: none;
+                            }
+                            
+                            .menu-normal:hover {
+                                text-shadow: -2px -2px 0 #6AB7DE;
+                                text-decoration: none;
+                            }
+                            
+                            #menu-normal li {
+                                float: left;
+                                margin-right: 40px;
+                                text-decoration: none;
+                                /* no underline */
+                            }
+                            
+                            @media (max-width: 768px) {
+                                #menu-normal,
+                                .icon,
+                                .icon img {
+                                    display: none;
+                                }
+                            }
+                            /* Title-container */
+                            
+                            .title-container {
+                                display: grid;
+                            }
+                        }
+                        .title-container-head {
+                            grid-area: TC1;
+                        }
+                        .title-container-main {
+                            grid-area: TC2;
+                            text-align: right;
+                        }
+                        /* Title-banner */
+                        .Title {
+                            @include responsive-font(8vw, 42px, 75px, 50px);
+                            font-weight: 900;
+                            line-height: 1.1;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            text-transform: uppercase;
+                            display: inline-block;
+                            &-sub {
+                                font-size: 0.34em;
+                                letter-spacing: 0.16em;
+                                font-weight: 400;
+                                text-transform: none;
+                                display: block;
+                                margin-top: unitSize(1.5);
+                                padding-top: unitSize(2);
+                                border-top: 0.45em solid;
+                            }
+                        }
+                        /* Layout */
+                        .l-Wrapper {
+                            top: 80px;
+                            bottom: 0px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        /* pj image overlay */
+                        https: //www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
+                        /* skill pop up */
+                         :root {
+                            --mainColor: #6AB7DE;
+                        }
+                        .tag {
+                            background: linear-gradient( to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+                            background-position: 0 100%;
+                            background-repeat: repeat-x;
+                            background-size: 1.5px 1.5px;
+                            color: #000;
+                            text-decoration: none;
+                            transition: background-size .2s;
+                        }
+                        .tag:hover {
+                            background-size: 4px 50px;
+                        }

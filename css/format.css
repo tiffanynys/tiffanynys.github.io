@@ -10,10 +10,16 @@ h3 {
 }
 
 h2 {
-    font-weight: 700;
     color: black;
     position: relative;
-    text-shadow: 2px 2px 0 #FF7C93;
+    text-shadow: 2px 2px 0 #6AB7DE;
+    text-decoration: none;
+}
+
+H3 {
+    color: black;
+    position: relative;
+    text-shadow: 1.5px 1.5px 0 #6AB7DE;
     text-decoration: none;
 }
 
@@ -21,7 +27,7 @@ h2 {
 /* Underline hyperlink */
 
 .underline {
-    border-bottom: 1.5px solid #FF7C93;
+    border-bottom: 1.5px solid #6AB7DE;
     color: black;
     padding-bottom: 0em;
     display: relative;
@@ -31,7 +37,7 @@ h2 {
 }
 
 .underline:hover {
-    border-bottom: 1.5px solid #2A86FF;
+    border-bottom: 1.5px solid #FF7C93;
     background-position: bottom;
     background-repeat: repeat-x;
     padding-bottom: 0em;
@@ -49,13 +55,13 @@ h2 {
     font-size: 55px;
     color: black;
     position: relative;
-    text-shadow: 4px 4px 0 #FF7C93;
+    text-shadow: 4px 4px 0 #6AB7DE;
     text-decoration: none;
     /* no underline */
 }
 
 .name:hover {
-    text-shadow: -4px -4px 0 #2A86FF;
+    text-shadow: -4px -4px 0 #FF7C93;
     text-decoration: none;
     /* no underline */
 }
@@ -77,6 +83,7 @@ h2 {
 /* Image responsive */
 
 .responsive {
+    display: block;
     max-width: 250px;
     height: auto;
 }
