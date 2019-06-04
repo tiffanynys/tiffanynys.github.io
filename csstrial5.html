@@ -3,11 +3,15 @@
 <head>
 
 </head>
-
 <style>
+    .container {
+        position: relative;
+        width: 50%;
+    }
+    
     .image {
         display: block;
-        max-width: 250px;
+        width: 100%;
         height: auto;
     }
     
@@ -24,7 +28,7 @@
         background-color: #008CBA;
     }
     
-    .responsive:hover .overlay {
+    .container:hover .overlay {
         opacity: 1;
     }
     
@@ -49,6 +53,13 @@
             <div class="text">Hello World</div>
         </div>
     </div>
+    <div class="container">
+        <img src="image/GShack.png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Hello World</div>
+        </div>
+    </div>
+
 
 </body>
 
