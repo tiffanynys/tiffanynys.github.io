@@ -4,8 +4,8 @@
 /* the overall top navigation bar */
 
 #top-header {
-    padding: 6px 0 6px;
-    width: 100%;
+    padding: 6px 6px 6px 6px;
+    width: 90%;
     top: 0;
     left: 0;
     z-index: 20;
