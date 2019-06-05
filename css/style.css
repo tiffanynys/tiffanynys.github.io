@@ -110,6 +110,7 @@
 /* pj image zoom */
 .zoom-effect img {
     display: block;
+    position: absolute;
     width: 100%;
     height: auto;
     transition: all 0.5s ease;
